@@ -71,10 +71,35 @@ Technology choices will be assessed against the requirements and documented alon
 
 Potential extensions include a personal task calendar, Moodle calendar import, timetable integration, configurable deadline reminders, and information about university support services. Integration work depends on user needs, available interfaces, and university approval. These extensions are outside the initial prototype scope.
 
+## Repository Structure
+
+```text
+academic-risk-platform/
+├── .github/          # Pull request template
+├── docs/             # Project documentation and decisions
+├── research/         # Literature, data assessment, and experiment protocols
+├── diagrams/         # Editable diagram sources and readable exports
+├── prototypes/       # Interface mockups and user flows
+├── src/
+│   ├── backend/      # API and application services
+│   ├── frontend/     # Student-facing interface
+│   └── ml/           # Model training, evaluation, and inference
+├── tests/            # Automated tests and supporting fixtures
+├── data/             # Data documentation, schemas, and synthetic examples
+└── CONTRIBUTING.md   # Contribution and review workflow
+```
+
+Directory guides describe the intended contents; they do not represent an implemented application.
+
 ## Project Resources
 
 - **Repository:** [aruzhanimm/academic-risk-platform](https://github.com/aruzhanimm/academic-risk-platform)
-- **Documentation:** links will be added as the prepared materials are reviewed and published.
+- **Contributing:** [workflow and review guidelines](CONTRIBUTING.md)
+- **Documentation:** [document guide](docs/README.md)
+- **Research:** [research guide](research/README.md)
+- **Design:** [diagrams](diagrams/README.md) and [prototypes](prototypes/README.md)
+- **Engineering:** [backend](src/backend/README.md), [frontend](src/frontend/README.md), [ML](src/ml/README.md), and [tests](tests/README.md)
+- **Data:** [data handling and documentation](data/README.md)
 - **YouTrack:** the project link will be added after setup.
 
 Installation, execution, and testing instructions will accompany the runnable components when they are added to the repository.

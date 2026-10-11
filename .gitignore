@@ -1,0 +1,81 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets/
+.secrets/
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.ipynb_checkpoints/
+*.egg-info/
+
+# JavaScript dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+*.tsbuildinfo
+
+# Test coverage and runtime output
+.coverage
+.coverage.*
+coverage/
+htmlcov/
+*.log
+
+# Private inputs, participant records, and local paper copies
+incoming/
+private/
+*_private.*
+research/papers_local/
+data/raw/
+data/private/
+data/interim/
+data/processed/
+
+# Local databases and backups
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql.gz
+
+# Trained models and checkpoints
+/models/
+/checkpoints/
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.h5
+*.safetensors
+
+# Operating system, editor, and temporary files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+tmp/
+temp/
+*.tmp
+*.swp
+~$*
+
+# Keep reviewed documentation, diagram exports, schemas, and synthetic fixtures.
