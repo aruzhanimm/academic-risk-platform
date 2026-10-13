@@ -1,11 +1,18 @@
-# Research Materials
+# Research
 
-Use this directory for the literature search, source assessments, feature definitions, dataset assessments, and experiment protocols supporting the project.
+Research materials for the Academic Risk Platform diploma project. The initial package is a working draft for team review; model training and collection of student data have not been performed.
 
-For each research source, record its bibliographic details, the specific claim it supports, relevant pages or sections, and limitations. Keep observations from a paper separate from the team's interpretation.
+| Document | Purpose |
+| --- | --- |
+| [Critical literature review](../docs/03_literature_review.md) | Comparison and synthesis of ten scientific publications and three official technical sources |
+| [Bibliography](bibliography.md) | Complete references, source links, and locations supporting the analysis |
+| [Research protocol](RESEARCH_PROTOCOL.md) | Questions, selection criteria, reading procedure, and evidence rules |
+| [Search log](search_log.md) | Recorded searches and source checks, with their original dates and limitations |
+| [Measurement evidence cards](contributions/measurement_review.md) | Five publications on measurement, demands/resources, and temporal design |
+| [ML evidence cards](contributions/ml_validation_review.md) | Five publications on modelling, educational data, leakage, and explanation |
+| [Feature operationalization](feature_operationalization.md) | Candidate constructs and checks for timing, scoring overlap, and leakage |
+| [Dataset audit](dataset_audit.md) | Suitability assessment based on available metadata; not a row-level data audit |
+| [Paper-card template](templates/paper_card.md) | Structure for documenting additional publications |
+| [Dataset-audit template](templates/dataset_audit.md) | Structure for evaluating additional data candidates |
 
-For each candidate dataset, document provenance, permission or licence, population, unit of observation, target definition, timing, and suitability for the proposed task. Describe whether it supports a future prediction or only a current-state assessment.
-
-Experiment protocols should identify the baseline, student and time separation, leakage checks, metrics, and conditions under which the proposed comparison would be meaningful. Record actual experimental results only after the experiments have been run.
-
-Keep restricted paper copies in the ignored local `papers_local/` directory. Publish references and analysis; include source files only when redistribution is permitted. Data storage conventions are described in the [data guide](../data/README.md).
+Keep study findings separate from project proposals and results of future experiments. Store original PDFs and raw participant data outside the published repository. Any future experiments should record data versions, preprocessing, splits, baselines, uncertainty, and limitations.
