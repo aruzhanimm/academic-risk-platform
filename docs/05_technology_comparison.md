@@ -86,6 +86,10 @@ The tests below are planned for the corresponding implementation. They are not c
 
 Authentication, hosting, retention/deletion behaviour, exact schema fields, and dependency versions remain open implementation decisions. No team or supervisor approval is implied by the proposed stack.
 
+## Decision records
+
+The [architecture decision records](adr/README.md) expand these choices into ownership rules, temporal provenance, API availability states, interface behaviour, validation plans, and conditions for reconsideration. Their status remains **Proposed** until an actual review accepts them.
+
 ## Primary-source register
 
 All sources below are official technical documentation, checked on **23 October 2026**. They support capability statements; they are not additional empirical burnout studies. TECH-03, TECH-06, and TECH-10 retain the identifiers used in the [research bibliography](../research/bibliography.md).
