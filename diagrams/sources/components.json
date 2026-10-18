@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "title": "Proposed components and trust boundaries",
+  "subtitle": "Academic Risk Platform · Logical design; components and controls are not yet implemented",
+  "description": "A React interface communicates with a FastAPI application over HTTPS and JSON. The application request boundary owns authentication, record ownership, validation and orchestration. Storage access and the ML adapter are internal modules of one application, not microservices. PostgreSQL and reviewed model artifacts have separate boundaries. Offline training prepares candidates for review and manual release, with no automatic training or runtime research-data access. A missing eligible model produces an unavailable result without a score.",
+  "width": 1500,
+  "height": 1570,
+  "nodes": [
+    {"id": "browser-boundary", "type": "boundary", "x": 60, "y": 160, "w": 360, "h": 310, "title": "Student device"},
+    {"id": "backend-boundary", "type": "boundary", "x": 510, "y": 160, "w": 920, "h": 620, "title": "Application service — FastAPI", "title_size": 24, "subtitle": "Internal modules in one deployable application"},
+    {"id": "data-boundary", "type": "boundary", "x": 510, "y": 875, "w": 440, "h": 295, "title": "Persistent-data boundary", "label_position": "bottom", "title_size": 21},
+    {"id": "artifact-boundary", "type": "boundary", "x": 1030, "y": 875, "w": 400, "h": 295, "title": "Model-artifact boundary", "label_position": "bottom", "title_size": 21},
+    {"id": "research-boundary", "type": "boundary", "x": 60, "y": 1240, "w": 890, "h": 235, "title": "Offline research environment"},
+    {"id": "react-interface", "type": "box", "x": 85, "y": 240, "w": 310, "h": 190, "fill": "pale", "title": "React interface", "title_size": 24, "body": ["Workload form", "History and result states", "Data-control requests"], "body_size": 19},
+    {"id": "request-boundary", "type": "box", "x": 560, "y": 270, "w": 820, "h": 145, "fill": "pale", "title": "API / request boundary", "title_size": 24, "body": ["Authentication and ownership checks", "Validation and orchestration"], "body_size": 21},
+    {"id": "storage-module", "type": "box", "x": 560, "y": 530, "w": 350, "h": 155, "title": "Storage-access module", "title_size": 22, "body": ["Owner-filtered operations", "History and data requests"], "body_size": 19},
+    {"id": "ml-adapter", "type": "box", "x": 1030, "y": 530, "w": 350, "h": 155, "title": "ML adapter", "title_size": 24, "body": ["Eligibility and versions", "Estimate and explanation", "Explicit unavailable states"], "body_size": 19},
+    {"id": "postgresql", "type": "database", "x": 560, "y": 960, "w": 340, "h": 145, "fill": "pale", "title": "PostgreSQL", "title_size": 24, "body": ["Owned records and versions", "Data-request state"], "body_size": 19},
+    {"id": "model-artifacts", "type": "box", "x": 1060, "y": 960, "w": 340, "h": 145, "fill": "pale", "title": "Reviewed artifacts", "title_size": 23, "body": ["Model and preprocessing", "Feature / scoring schema", "Versioned manifest"], "body_size": 18},
+    {"id": "design-notes", "type": "box", "x": 60, "y": 540, "w": 360, "h": 300, "stroke": "line", "title": "Design boundaries", "title_size": 23, "body": ["No browser → database access", "Backend enforces ownership", "No approved model:", "return model_unavailable", "Unavailable means no score", "Research data access is separate"], "body_size": 18},
+    {"id": "excluded-services", "type": "box", "x": 60, "y": 915, "w": 360, "h": 245, "stroke": "line", "title": "Outside initial scope", "title_size": 23, "body": ["LMS integration", "Medical-record access", "Adviser workspace", "No active connections shown"], "body_size": 19},
+    {"id": "research-training", "type": "box", "x": 90, "y": 1305, "w": 440, "h": 130, "title": "Research / training", "title_size": 23, "body": ["Separate from the deployed service", "No automatic production training"], "body_size": 18},
+    {"id": "review-release", "type": "box", "x": 600, "y": 1305, "w": 320, "h": 130, "title": "Review and release", "title_size": 23, "body": ["Evaluate suitability", "Approve a versioned bundle"], "body_size": 18}
+  ],
+  "edges": [
+    {"id": "ui-request", "points": [[395, 290], [560, 290]], "style": "request", "label": {"x": 477, "y": 260, "w": 142, "lines": "HTTPS / JSON"}},
+    {"id": "api-response", "points": [[560, 355], [395, 355]], "style": "response", "label": {"x": 477, "y": 389, "w": 138, "lines": "Data / status"}},
+    {"id": "request-storage", "points": [[640, 415], [640, 530]], "style": "request", "label": {"x": 640, "y": 472, "w": 120, "lines": "Read / write"}},
+    {"id": "storage-response", "points": [[840, 530], [840, 415]], "style": "response", "label": {"x": 840, "y": 472, "w": 136, "lines": ["Records /", "status"]}},
+    {"id": "request-estimate", "points": [[1080, 415], [1080, 530]], "style": "request", "label": {"x": 1080, "y": 472, "w": 135, "lines": ["Assess if", "eligible"]}},
+    {"id": "estimate-response", "points": [[1330, 530], [1330, 415]], "style": "response", "label": {"x": 1330, "y": 472, "w": 140, "lines": ["Result /", "status"]}},
+    {"id": "database-operation", "points": [[640, 685], [640, 963]], "style": "request", "label": {"x": 640, "y": 825, "w": 150, "lines": "SQL operations"}},
+    {"id": "database-response", "points": [[835, 964.3], [835, 685]], "style": "response", "label": {"x": 835, "y": 825, "w": 140, "lines": "Rows / status"}},
+    {"id": "artifact-load", "points": [[1110, 685], [1110, 960]], "style": "request", "label": {"x": 1110, "y": 825, "w": 155, "lines": "Load by version"}},
+    {"id": "artifact-response", "points": [[1330, 960], [1330, 685]], "style": "response", "label": {"x": 1330, "y": 825, "w": 165, "lines": "Trusted artifacts"}},
+    {"id": "candidate-review", "points": [[530, 1370], [600, 1370]], "style": "request"},
+    {"id": "manual-model-release", "points": [[920, 1370], [1460, 1370], [1460, 1040], [1400, 1040]], "style": "manual", "label": {"x": 1200, "y": 1320, "w": 260, "lines": ["Manual release only", "After model review"], "size": 18}}
+  ],
+  "footer": "Solid arrows: calls and returned data · Dashed arrow: reviewed artifact release · Backend boxes are internal modules"
+}

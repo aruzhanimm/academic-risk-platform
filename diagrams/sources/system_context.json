@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "title": "System context",
+  "subtitle": "Academic Risk Platform · Proposed scope; no implementation is asserted",
+  "description": "A student submits voluntary workload observations and data-control requests to the Academic Risk Platform, which returns personal history and result states. A deployment operator has a separate control-plane role. University LMS, medical records and adviser workspaces have no active connections.",
+  "width": 1500,
+  "height": 1000,
+  "nodes": [
+    {"id": "student", "type": "box", "x": 60, "y": 275, "w": 270, "h": 300, "title": "Student", "body": ["Voluntary input", "Personal history", "Data-control requests"], "body_size": 19},
+    {"id": "platform", "type": "box", "x": 510, "y": 240, "w": 480, "h": 370, "fill": "pale", "title": "Academic Risk Platform", "title_size": 25, "body": ["Workload observations", "Own history", "Conditional estimate + explanation", "Export / deletion requests", "Model unavailable is a valid state"], "body_size": 20},
+    {"id": "operator", "type": "box", "x": 1170, "y": 275, "w": 270, "h": 300, "title": ["Deployment", "operator"], "body": ["Control plane only", "Approved configuration", "Technical operations"], "body_size": 19},
+    {"id": "operator-scope", "type": "box", "x": 1170, "y": 615, "w": 270, "h": 100, "stroke": "line", "body": ["No routine browsing", "of student answers"], "body_size": 18},
+    {"id": "excluded-services", "type": "box", "x": 60, "y": 765, "w": 1380, "h": 135, "fill": "light", "stroke": "line", "title": "Outside the initial scope", "body": ["University LMS and calendars · Medical records · Adviser workspace", "No integrations or data flows are assumed."], "body_size": 20}
+  ],
+  "edges": [
+    {"id": "student-request", "points": [[330, 350], [510, 350]], "style": "request", "label": {"x": 420, "y": 310, "w": 164, "lines": ["Workload input", "Data requests"]}},
+    {"id": "student-response", "points": [[510, 490], [330, 490]], "style": "response", "label": {"x": 420, "y": 535, "w": 162, "lines": ["Own history", "Result / status"]}},
+    {"id": "operator-control", "points": [[1170, 350], [990, 350]], "style": "manual", "label": {"x": 1080, "y": 310, "w": 162, "lines": ["Deploy", "Configure"]}},
+    {"id": "operator-status", "points": [[990, 490], [1170, 490]], "style": "manual", "label": {"x": 1080, "y": 535, "w": 162, "lines": ["Operational", "status"]}}
+  ],
+  "footer": "Solid arrows: student requests and responses · Dashed arrows: control-plane interactions · Conceptual design"
+}
