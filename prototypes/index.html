@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academic Risk Platform — student prototype</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="prototype-banner">
+      <span class="demo-dot"></span><strong>Synthetic prototype</strong><span>Use made-up values. Changes stay in this tab and reset on refresh.</span>
+    </div>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#history" aria-label="Academic Risk Platform home"><span class="brand-mark">ar<span>·</span></span><span>Academic<br><strong>Risk Platform</strong></span></a>
+        <p class="nav-heading">
+          YOUR WORKSPACE
+        </p>
+        <nav class="main-nav">
+          <a href="#history" data-view="history" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9m8 10V4m8 15v-7"/></svg><span>Overview & history</span></a>
+          <a href="#input" data-view="input"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M8 12h8m-4-4v8"/></svg><span>Add observation</span></a>
+          <a href="#explanation" data-view="explanation"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 11v5m0-9v1"/></svg><span>Estimate & explanation</span></a>
+          <a href="#data_control" data-view="data_control"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6Z"/><path d="m8 12 3 3 5-6"/></svg><span>My data</span></a>
+        </nav>
+        <div class="sidebar-note">
+          <span class="small-label">A LITTLE CONTEXT</span>
+          <p>
+            Keep a clear record of your study workload, one observation at a time.
+          </p>
+          <span class="quiet">Student-facing research prototype</span>
+        </div>
+        <button class="reset-button" id="reset-demo" type="button"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></svg><span>Reset demo</span></button>
+      </aside>
+      <div class="workspace">
+        <header class="topbar">
+          <span id="breadcrumb">Workspace <span>/</span> Overview</span><span class="student-mode"><span class="avatar" aria-hidden="true">S</span>Student preview</span>
+        </header>
+        <main id="main" tabindex="-1">
+          <section class="view" id="view-history" aria-labelledby="history-title">
+            <div class="page-heading overview-hero">
+              <div>
+                <p class="eyebrow">
+                  YOUR STUDY RHYTHM
+                </p>
+                <h1 id="history-title">
+                  Your week, in context.
+                </h1>
+                <p class="page-intro">
+                  A simple record of your workload and upcoming submissions.
+                </p>
+                <a class="button primary" href="#input"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Add observation</span></a>
+              </div>
+              <div class="hero-art">
+                <svg class="study-illustration" viewBox="0 0 210 165" aria-hidden="true">
+                <path d="M33 135V83a69 69 0 0 1 138 0v52" fill="#d7e8d5"/>
+                <circle cx="172" cy="31" r="10" fill="#efc567"/>
+                <path d="M24 57h10m-5-5v10m155 43h9m-4-4v8" stroke="#93b5a0" stroke-width="3" stroke-linecap="round"/>
+                <ellipse cx="106" cy="146" rx="78" ry="8" fill="#173e3220"/>
+                <rect x="42" y="128" width="113" height="15" rx="5" fill="#337a62"/>
+                <path d="M50 133h97m-95 5h93" stroke="#e7f2de" stroke-width="2" stroke-linecap="round"/>
+                <rect x="35" y="111" width="113" height="17" rx="5" fill="#e9ba58"/>
+                <path d="M44 117h95m-92 5h91" stroke="#fff2d3" stroke-width="2" stroke-linecap="round"/>
+                <g transform="rotate(-9 96 80)"><rect x="60" y="36" width="65" height="78" rx="8" fill="#1d5d49"/>
+                <rect x="67" y="36" width="58" height="74" rx="7" fill="#fffdf3" stroke="#b6cbbb" stroke-width="1.5"/>
+                <path d="M78 54h34m-34 8h22m-22 23h34m-34 8h27" stroke="#c2d4c6" stroke-width="3" stroke-linecap="round"/>
+                <rect x="75" y="70" width="12" height="7" rx="3.5" fill="#e6bd66"/>
+                <path d="M110 36v16l-5-3-5 3V36" fill="#e9b958"/>
+                </g>
+                <path d="M160 110V67m0 28c-16-1-24-10-24-22 16 1 24 8 24 22m0-12c0-16 8-25 21-27-1 15-8 23-21 27" fill="#5a9370" stroke="#397455" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M144 107h32l-5 27h-22Z" fill="#d89c68"/><path d="M143 107h34v7h-34Z" fill="#e5b58b"/>
+                </svg>
+              </div>
+            </div>
+            <div class="stats-grid">
+              <article class="stat-card">
+                <div class="stat-top">
+                  <span class="small-label">LATEST STUDY TIME</span><span class="icon-badge mint-badge"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg></span>
+                </div>
+                <p class="stat-number" id="latest-hours">
+                  28<span>hours</span>
+                </p>
+                <p>
+                  Reported for the past 7 days
+                </p>
+              </article>
+              <article class="stat-card">
+                <div class="stat-top">
+                  <span class="small-label">KNOWN DEADLINES</span><span class="icon-badge peach-badge"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4m8-4v4M4 10h16m-11 4h1m4 0h1m-6 3h1"/></svg></span>
+                </div>
+                <p class="stat-number" id="latest-deadlines">
+                  3<span>submissions</span>
+                </p>
+                <p>
+                  Already announced, next 14 days
+                </p>
+              </article>
+              <article class="stat-card estimate-stat">
+                <span class="small-label">ESTIMATE AVAILABILITY</span>
+                <p class="status-heading">
+                  <span class="status-dot"></span>Not available yet
+                </p>
+                <p>
+                  Your observation history is still available.
+                </p>
+                <a href="#explanation" class="text-link">Understand this state <svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+              </article>
+            </div>
+            <section class="card chart-card" aria-labelledby="chart-title">
+              <div class="card-heading">
+                <div>
+                  <p class="eyebrow">
+                    OVER TIME
+                  </p>
+                  <h2 id="chart-title">
+                    Reported study hours
+                  </h2>
+                </div>
+                <span class="pill neutral">Synthetic observations</span>
+              </div>
+              <div id="history-chart" class="history-chart">
+              </div>
+              <p class="chart-caption">
+                <span id="chart-period"></span>Hours describe reported workload. A dash marks missing hours. No burnout score is calculated.
+              </p>
+            </section>
+            <section class="card history-card" aria-labelledby="records-title">
+              <div class="card-heading">
+                <h2 id="records-title">
+                  Your observations
+                </h2>
+                <div class="filter-control">
+                  <label for="history-filter">Show</label><select id="history-filter"><option value="all">All observations</option><option value="recent">Latest 2 observations</option><option value="empty">Preview empty history</option></select>
+                </div>
+              </div>
+              <div id="history-table">
+              </div>
+            </section>
+          </section>
+          <section class="view" id="view-input" aria-labelledby="input-title" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">
+                  A MOMENT TO CHECK IN
+                </p>
+                <h1 id="input-title">
+                  Add an observation.
+                </h1>
+                <p class="page-intro">
+                  Record a little context about your study time and known deadlines.
+                </p>
+              </div>
+              <span class="pill neutral">Demo form</span>
+            </div>
+            <div class="two-column input-layout">
+              <form class="card observation-form" id="observation-form" novalidate>
+                <div class="section-heading">
+                  <span class="step-number">01</span>
+                  <div>
+                    <h2>
+                      Choose your reference date
+                    </h2>
+                    <p>
+                      The reporting periods below follow this date.
+                    </p>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="observation-date">Observation date <span class="required">Required</span></label><input id="observation-date" name="date" type="date" value="2026-10-19" aria-describedby="date-help date-error">
+                  <p class="field-help" id="date-help">
+                    The date this example observation refers to.
+                  </p>
+                  <p class="field-error" id="date-error" hidden>
+                  </p>
+                </div>
+                <div class="section-heading section-divider">
+                  <span class="step-number">02</span>
+                  <div>
+                    <h2>
+                      Add the workload details
+                    </h2>
+                    <p>
+                      Add what you know. Leave unknown values blank.
+                    </p>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="study-hours">Study hours in the past 7 days</label>
+                  <div class="input-with-unit">
+                    <input id="study-hours" name="hours" type="number" min="0" max="168" step="any" placeholder="e.g. 28" value="28" aria-describedby="hours-help hours-window hours-error"><span aria-hidden="true">hours</span>
+                  </div>
+                  <p class="field-window" id="hours-window">
+                  </p>
+                  <p class="field-help" id="hours-help">
+                    Include taught sessions and independent study. Count each hour once. Range: 0–168 hours.
+                  </p>
+                  <p class="field-error" id="hours-error" hidden>
+                  </p>
+                </div>
+                <div class="field">
+                  <label for="known-deadlines">Known submission deadlines in the next 14 days</label>
+                  <div class="input-with-unit">
+                    <input id="known-deadlines" name="deadlines" type="number" min="0" max="100" step="1" placeholder="e.g. 3" value="3" aria-describedby="deadlines-help deadlines-window deadlines-error"><span aria-hidden="true">submissions</span>
+                  </div>
+                  <p class="field-window" id="deadlines-window">
+                  </p>
+                  <p class="field-help" id="deadlines-help">
+                    Count mandatory submissions already announced by the observation date. Exclude examinations and tests. Demo entry limit: 100.
+                  </p>
+                  <p class="field-error" id="deadlines-error" hidden>
+                  </p>
+                </div>
+                <div class="notice-box">
+                  <label class="check-label"><input id="demo-consent" type="checkbox" aria-describedby="consent-error"><span>I understand this is a voluntary demonstration using made-up values.</span></label>
+                  <p class="field-error" id="consent-error" hidden>
+                  </p>
+                  <p>
+                    Adding a demo observation changes this tab only. Refresh to restore the examples.
+                  </p>
+                </div>
+                <div class="form-actions">
+                  <button class="button primary" type="submit">Add demo observation <svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><a class="button secondary" href="#history">Cancel</a>
+                </div>
+              </form>
+              <aside class="input-aside">
+                <div class="card soft-card">
+                  <div class="aside-art">
+                    <svg class="study-illustration" viewBox="0 0 210 165" aria-hidden="true">
+                    <path d="M33 135V83a69 69 0 0 1 138 0v52" fill="#d7e8d5"/>
+                    <circle cx="172" cy="31" r="10" fill="#efc567"/>
+                    <path d="M24 57h10m-5-5v10m155 43h9m-4-4v8" stroke="#93b5a0" stroke-width="3" stroke-linecap="round"/>
+                    <ellipse cx="106" cy="146" rx="78" ry="8" fill="#173e3220"/>
+                    <rect x="42" y="128" width="113" height="15" rx="5" fill="#337a62"/>
+                    <path d="M50 133h97m-95 5h93" stroke="#e7f2de" stroke-width="2" stroke-linecap="round"/>
+                    <rect x="35" y="111" width="113" height="17" rx="5" fill="#e9ba58"/>
+                    <path d="M44 117h95m-92 5h91" stroke="#fff2d3" stroke-width="2" stroke-linecap="round"/>
+                    <g transform="rotate(-9 96 80)"><rect x="60" y="36" width="65" height="78" rx="8" fill="#1d5d49"/>
+                    <rect x="67" y="36" width="58" height="74" rx="7" fill="#fffdf3" stroke="#b6cbbb" stroke-width="1.5"/>
+                    <path d="M78 54h34m-34 8h22m-22 23h34m-34 8h27" stroke="#c2d4c6" stroke-width="3" stroke-linecap="round"/>
+                    <rect x="75" y="70" width="12" height="7" rx="3.5" fill="#e6bd66"/>
+                    <path d="M110 36v16l-5-3-5 3V36" fill="#e9b958"/>
+                    </g>
+                    <path d="M160 110V67m0 28c-16-1-24-10-24-22 16 1 24 8 24 22m0-12c0-16 8-25 21-27-1 15-8 23-21 27" fill="#5a9370" stroke="#397455" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M144 107h32l-5 27h-22Z" fill="#d89c68"/><path d="M143 107h34v7h-34Z" fill="#e5b58b"/>
+                    </svg>
+                  </div>
+                  <span class="small-label">BEFORE YOU START</span>
+                  <h2>
+                    A record you can return to.
+                  </h2>
+                  <p>
+                    The purpose is to make your workload easier to review over time.
+                  </p>
+                  <ul class="quiet-list">
+                    <li>
+                      You choose whether to add an observation.
+                    </li>
+                    <li>
+                      Leave a value blank when it is not known.
+                    </li>
+                    <li>
+                      Study hours and deadlines do not establish a diagnosis.
+                    </li>
+                  </ul>
+                </div>
+                <div class="aside-note">
+                  <svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-9v.5"/></svg>
+                  <p>
+                    Use sample values only. Explore the experience before any real participant data is collected.
+                  </p>
+                </div>
+              </aside>
+            </div>
+          </section>
+          <section class="view" id="view-explanation" aria-labelledby="explanation-title" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">
+                  MEANING & LIMITS
+                </p>
+                <h1 id="explanation-title">
+                  Understand the result.
+                </h1>
+                <p class="page-intro">
+                  See what is available and what an estimate would need to explain.
+                </p>
+              </div>
+              <span class="pill neutral">State preview</span>
+            </div>
+            <div class="preview-switch" aria-label="Preview example result states">
+              <span>Preview an example:</span><button type="button" class="state-choice active" data-result-state="model" aria-pressed="true">Model unavailable</button><button type="button" class="state-choice" data-result-state="insufficient" aria-pressed="false">Insufficient data</button>
+            </div>
+            <div class="two-column result-layout">
+              <section class="card result-card" aria-labelledby="result-state-title">
+                <div class="result-symbol">
+                  <svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5v14h16M8 14l4-4 3 2 4-6"/><path d="M16 6h3v3"/></svg>
+                </div>
+                <span class="pill warm" id="result-state-tag">Model unavailable</span>
+                <h2 id="result-state-title">
+                  An estimate is not available yet.
+                </h2>
+                <p class="result-description" id="result-state-description">
+                  A suitable evaluated model has not been enabled. You can still record observations and explore your history.
+                </p>
+                <div class="result-note" id="result-state-note">
+                  No numerical score or feature contribution has been generated.
+                </div>
+                <div class="result-actions">
+                  <a class="button primary" href="#history">Back to your history</a><a class="text-link" href="#input"><span>Add an observation</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+                </div>
+              </section>
+              <section class="card context-card" aria-labelledby="selected-title">
+                <p class="eyebrow">
+                  OBSERVATION CONTEXT
+                </p>
+                <h2 id="selected-title">
+                  Your selected record
+                </h2>
+                <dl class="record-details">
+                  <div>
+                    <dt>
+                      Reference date
+                    </dt>
+                    <dd id="selected-date">
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>
+                      Study hours · past 7 days
+                    </dt>
+                    <dd id="selected-hours">
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>
+                      Known deadlines · next 14 days
+                    </dt>
+                    <dd id="selected-deadlines">
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>
+                      Source
+                    </dt>
+                    <dd>
+                      <span class="pill neutral">Synthetic example</span>
+                    </dd>
+                  </div>
+                </dl>
+                <p class="field-help">
+                  These values are shown as context. They are not being passed to a predictive model.
+                </p>
+              </section>
+            </div>
+            <section class="card explanation-guide" aria-labelledby="explanation-guide-title">
+              <div>
+                <p class="eyebrow">
+                  WHEN AN ESTIMATE BECOMES AVAILABLE
+                </p>
+                <h2 id="explanation-guide-title">
+                  A useful explanation should tell you…
+                </h2>
+              </div>
+              <div class="guide-grid">
+                <div>
+                  <span class="guide-number"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4m8-4v4M4 10h16m-11 4h1m4 0h1m-6 3h1"/></svg></span>
+                  <h3>
+                    What it describes
+                  </h3>
+                  <p>
+                    The outcome, whether it is a current assessment or a forecast, and the relevant time window.
+                  </p>
+                </div>
+                <div>
+                  <span class="guide-number"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5v14h16M8 14l4-4 3 2 4-6"/><path d="M16 6h3v3"/></svg></span>
+                  <h3>
+                    What informed it
+                  </h3>
+                  <p>
+                    The input observation and, where supported, how the model used its information.
+                  </p>
+                </div>
+                <div>
+                  <span class="guide-number"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-9v.5"/></svg></span>
+                  <h3>
+                    Where its limits are
+                  </h3>
+                  <p>
+                    Uncertainty and applicable limitations. Model explanations do not establish causes or diagnoses.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="view" id="view-data_control" aria-labelledby="data-title" hidden>
+            <div class="page-heading">
+              <div>
+                <p class="eyebrow">
+                  YOUR RECORDS
+                </p>
+                <h1 id="data-title">
+                  Stay in control of your data.
+                </h1>
+                <p class="page-intro">
+                  Preview how a request and its processing status would be presented.
+                </p>
+              </div>
+              <span class="pill neutral">Request preview</span>
+            </div>
+            <div class="two-column data-layout">
+              <form class="card data-form" id="data-form">
+                <h2>
+                  Choose a request
+                </h2>
+                <fieldset class="request-types">
+                  <legend class="visually-hidden">Request type</legend><label class="request-option"><input type="radio" name="request-type" value="export" checked><span><strong>Export my records</strong><small>Request a copy of your observations and associated results.</small></span><span class="option-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 15v5h16v-5"/></svg></span></label><label class="request-option"><input type="radio" name="request-type" value="delete"><span><strong>Delete my records</strong><small>Request removal within a clearly defined scope.</small></span><span class="option-icon"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v5m4-5v5"/></svg></span></label>
+                </fieldset>
+                <div class="scope-box">
+                  <span class="small-label">REQUEST SCOPE</span>
+                  <p id="request-scope">
+                    Your observations and any associated estimates. A real export would require ownership checks and a protected, expiring download.
+                  </p>
+                </div>
+                <label class="check-label request-confirm"><input id="request-confirm" type="checkbox" required><span>I understand this creates a simulated request only.</span></label><button class="button primary" id="request-button" type="submit"><span id="request-button-label">Preview export request</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+                <p class="field-help">
+                  No request is sent. No export or deletion is performed.
+                </p>
+              </form>
+              <div class="request-aside">
+                <section class="card request-status" aria-labelledby="request-status-title">
+                  <span class="small-label">REQUEST STATUS</span>
+                  <div class="pending-symbol">
+                    <svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></svg>
+                  </div>
+                  <h2 id="request-status-title">
+                    No demo request yet
+                  </h2>
+                  <p id="request-status-text">
+                    Choose a request type to preview the pending state.
+                  </p>
+                  <div id="request-status-detail" hidden>
+                    <span class="pill warm">Demo request · Pending</span>
+                    <p>
+                      Accepted and completed are separate states. No processing takes place in this prototype.
+                    </p>
+                  </div>
+                </section>
+                <div class="aside-note">
+                  <svg class="icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-9v.5"/></svg>
+                  <p>
+                    Retention, backup handling, export expiry, and processing times must be agreed before personal data is collected.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <footer class="page-footer">
+            <span>Academic Risk Platform</span><span>Research prototype · All observations are synthetic</span>
+          </footer>
+        </main>
+      </div>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden>
+    </div>
+    <noscript>
+      <p class="noscript">
+        Enable JavaScript to explore the local prototype, or use the PNG previews in the exports folder.
+      </p>
+    </noscript>
+  </body>
+</html>
