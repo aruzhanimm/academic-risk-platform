@@ -10,14 +10,14 @@ This interaction prototype precedes the proposed React application. It follows t
 
 Demo labels, visible periods/units, and textual unavailable states distinguish sample observations from computed estimates.
 
-![Synthetic observation input screen](../prototypes/exports/input.png)
+![Synthetic observation input screen](../prototypes/exports/input.jpg)
 
 | View | Purpose and capture |
 | --- | --- |
-| History | Dated observations, study-hour chart, filtering, and empty-state preview. [Desktop capture](../prototypes/exports/history.png). |
-| Result availability | Default missing-model state and a separate insufficient-input example. [Desktop capture](../prototypes/exports/explanation.png). |
-| Data control | Request type/scope, confirmation, and simulated pending status. [Desktop capture](../prototypes/exports/data_control.png). |
-| Narrow screen | Responsive navigation and readable forms. [Mobile capture](../prototypes/exports/mobile.png). |
+| History | Dated observations, study-hour chart, filtering, and empty-state preview. [Desktop capture](../prototypes/exports/history.jpg). |
+| Result availability | Default missing-model state and a separate insufficient-input example. [Desktop capture](../prototypes/exports/explanation.jpg). |
+| Data control | Request type/scope, confirmation, and simulated pending status. [Desktop capture](../prototypes/exports/data_control.jpg). |
+| Narrow screen | Responsive navigation and readable forms. [Mobile capture](../prototypes/exports/mobile.jpg). |
 
 Captures document appearance, not usability-test results.
 
