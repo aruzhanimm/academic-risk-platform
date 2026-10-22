@@ -4,6 +4,8 @@ Use this directory for automated checks and small, clearly labelled synthetic fi
 
 Planned areas include input validation, access to student records, API behaviour, persistence, model input/output contracts, and user-facing error states. Place tests with their component when that component's framework requires it, and document how to run them.
 
+The [verification and evaluation plan](../docs/09_verification_evaluation.md) defines the planned `REQ-V01`–`REQ-V12` acceptance checks, required evidence, synthetic workload, and boundaries between technical verification, model evaluation, and participant walkthroughs. Preserve these identifiers when implementing the checks.
+
 Test fixtures must not contain participant records or credentials. Add dependencies and test commands with actual tests; an empty directory or a test plan does not represent a passed test suite.
 
 For documentation changes, check relative links, diagram consistency, sources, and acceptance criteria, and report those checks in the pull request. Model evaluation protocols and experimental results belong with the research materials.
