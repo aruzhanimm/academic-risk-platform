@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000" role="img" aria-labelledby="diagram-title diagram-description">
+<title id="diagram-title">System context</title>
+<desc id="diagram-description">A student submits voluntary workload observations and data-control requests to the Academic Risk Platform, which returns personal history and result states. A deployment operator has a separate control-plane role. University LMS, medical records and adviser workspaces have no active connections.</desc>
+<defs>
+<marker id="arrow-navy" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 4 L 0 8 Z" fill="#17364d"/></marker>
+<marker id="arrow-teal" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 4 L 0 8 Z" fill="#087f8c"/></marker>
+<marker id="arrow-muted" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 4 L 0 8 Z" fill="#516778"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="63" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" fill="#17364d">System context</text>
+<text x="60" y="101" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#516778">Academic Risk Platform · Proposed scope; no implementation is asserted</text>
+<polyline id="student-request" points="330,350 510,350" fill="none" stroke="#087f8c" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-teal)" />
+<polyline id="student-response" points="510,490 330,490" fill="none" stroke="#17364d" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-navy)" />
+<polyline id="operator-control" points="1170,350 990,350" fill="none" stroke="#516778" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="9 6" marker-end="url(#arrow-muted)" />
+<polyline id="operator-status" points="990,490 1170,490" fill="none" stroke="#516778" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="9 6" marker-end="url(#arrow-muted)" />
+<rect x="60" y="275" width="270" height="300" rx="16" fill="#ffffff" stroke="#087f8c" stroke-width="2.5"/>
+<text x="195" y="384.955" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#17364d">Student</text>
+<text x="195" y="424.395" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Voluntary input</text>
+<text x="195" y="451.945" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Personal history</text>
+<text x="195" y="479.495" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Data-control requests</text>
+<rect x="510" y="240" width="480" height="370" rx="16" fill="#eff8f8" stroke="#087f8c" stroke-width="2.5"/>
+<text x="750" y="354.5" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#17364d">Academic Risk Platform</text>
+<text x="750" y="395.5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#516778">Workload observations</text>
+<text x="750" y="424.5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#516778">Own history</text>
+<text x="750" y="453.5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#516778">Conditional estimate + explanation</text>
+<text x="750" y="482.5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#516778">Export / deletion requests</text>
+<text x="750" y="511.5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#516778">Model unavailable is a valid state</text>
+<rect x="1170" y="275" width="270" height="300" rx="16" fill="#ffffff" stroke="#087f8c" stroke-width="2.5"/>
+<text x="1305" y="370.235" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#17364d">Deployment</text>
+<text x="1305" y="399.675" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#17364d">operator</text>
+<text x="1305" y="439.115" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Control plane only</text>
+<text x="1305" y="466.665" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Approved configuration</text>
+<text x="1305" y="494.215" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Technical operations</text>
+<rect x="1170" y="615" width="270" height="100" rx="16" fill="#ffffff" stroke="#a6bac5" stroke-width="2.5"/>
+<text x="1305" y="656.9" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">No routine browsing</text>
+<text x="1305" y="683" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">of student answers</text>
+<rect x="60" y="765" width="1380" height="135" rx="16" fill="#f7fafc" stroke="#a6bac5" stroke-width="2.5"/>
+<text x="750" y="804.78" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#17364d">Outside the initial scope</text>
+<text x="750" y="845.22" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#516778">University LMS and calendars · Medical records · Adviser workspace</text>
+<text x="750" y="874.22" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#516778">No integrations or data flows are assumed.</text>
+<rect x="338" y="280.05" width="164" height="59.9" rx="7" fill="white"/>
+<text x="420" y="304.305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Workload input</text>
+<text x="420" y="327.255" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Data requests</text>
+<rect x="339" y="505.05" width="162" height="59.9" rx="7" fill="white"/>
+<text x="420" y="529.305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Own history</text>
+<text x="420" y="552.255" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Result / status</text>
+<rect x="999" y="280.05" width="162" height="59.9" rx="7" fill="white"/>
+<text x="1080" y="304.305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Deploy</text>
+<text x="1080" y="327.255" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Configure</text>
+<rect x="999" y="505.05" width="162" height="59.9" rx="7" fill="white"/>
+<text x="1080" y="529.305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Operational</text>
+<text x="1080" y="552.255" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">status</text>
+<text x="60" y="962" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#516778">Solid arrows: student requests and responses · Dashed arrows: control-plane interactions · Conceptual design</text>
+</svg>

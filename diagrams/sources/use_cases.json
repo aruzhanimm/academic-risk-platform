@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "title": "Student use cases",
+  "subtitle": "Academic Risk Platform · UML use-case view of proposed behaviour",
+  "description": "The Student actor participates in four use cases inside the Academic Risk Platform boundary: voluntarily enter an observation after an information notice, view own history, inspect an eligible estimate and explanation or an unavailable state, and request export or deletion. Associations indicate participation, not data flow. Authentication is a required design control, not an implemented capability.",
+  "width": 1500,
+  "height": 1270,
+  "nodes": [
+    {"id": "system-boundary", "type": "boundary", "x": 365, "y": 150, "w": 1075, "h": 900, "title": "Academic Risk Platform", "subtitle": "Student-facing functional scope", "dashed": false, "fill": "white"},
+    {"id": "student", "type": "actor", "x": 60, "y": 430, "w": 200, "h": 275, "title": "Student", "subtitle": "Own records only", "stroke": "navy"},
+    {"id": "uc-01", "type": "ellipse", "x": 500, "y": 245, "w": 850, "h": 135, "fill": "pale", "title": "UC-01  Enter an observation", "title_size": 24, "body": ["Read the purpose and voluntary-use notice", "Enter workload information for validation"], "body_size": 20},
+    {"id": "uc-02", "type": "ellipse", "x": 500, "y": 440, "w": 850, "h": 135, "fill": "pale", "title": "UC-02  View own history", "title_size": 24, "body": ["Review dated personal observations", "Identify empty history or missing entries"], "body_size": 20},
+    {"id": "uc-03", "type": "ellipse", "x": 500, "y": 635, "w": 850, "h": 135, "fill": "pale", "title": "UC-03  Inspect result and explanation", "title_size": 24, "body": ["View an eligible estimate and available explanation", "Or see insufficient_data / model_unavailable"], "body_size": 20},
+    {"id": "uc-04", "type": "ellipse", "x": 500, "y": 830, "w": 850, "h": 135, "fill": "pale", "title": "UC-04  Request export or deletion", "title_size": 24, "body": ["Request a defined scope for personal records", "Track actual status; acceptance is not completion"], "body_size": 20},
+    {"id": "notation-note", "type": "box", "x": 60, "y": 1095, "w": 1380, "h": 115, "stroke": "line", "fill": "light", "body": ["Solid associations show participation, not data-flow direction.", "Authentication and ownership checks are required; their implementation is not asserted.", "Deployment operations are outside these student use cases."], "body_size": 19}
+  ],
+  "edges": [
+    {"id": "student-uc-01", "points": [[208, 515], [500, 312.5]], "style": "association"},
+    {"id": "student-uc-02", "points": [[208, 515], [500, 507.5]], "style": "association"},
+    {"id": "student-uc-03", "points": [[208, 515], [500, 702.5]], "style": "association"},
+    {"id": "student-uc-04", "points": [[208, 515], [500, 897.5]], "style": "association"}
+  ],
+  "footer": "Conceptual design · Use-case identifiers match the requirements and architecture documents"
+}

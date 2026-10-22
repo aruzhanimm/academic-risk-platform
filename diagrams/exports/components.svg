@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1570" viewBox="0 0 1500 1570" role="img" aria-labelledby="diagram-title diagram-description">
+<title id="diagram-title">Proposed components and trust boundaries</title>
+<desc id="diagram-description">A React interface communicates with a FastAPI application over HTTPS and JSON. The application request boundary owns authentication, record ownership, validation and orchestration. Storage access and the ML adapter are internal modules of one application, not microservices. PostgreSQL and reviewed model artifacts have separate boundaries. Offline training prepares candidates for review and manual release, with no automatic training or runtime research-data access. A missing eligible model produces an unavailable result without a score.</desc>
+<defs>
+<marker id="arrow-navy" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 4 L 0 8 Z" fill="#17364d"/></marker>
+<marker id="arrow-teal" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 4 L 0 8 Z" fill="#087f8c"/></marker>
+<marker id="arrow-muted" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 10 4 L 0 8 Z" fill="#516778"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="63" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="start" fill="#17364d">Proposed components and trust boundaries</text>
+<text x="60" y="101" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="start" fill="#516778">Academic Risk Platform · Logical design; components and controls are not yet implemented</text>
+<rect x="60" y="160" width="360" height="310" rx="18" fill="#f7fafc" stroke="#a6bac5" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="82" y="194" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#17364d">Student device</text>
+<rect x="510" y="160" width="920" height="620" rx="18" fill="#f7fafc" stroke="#a6bac5" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="532" y="194" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="start" fill="#17364d">Application service — FastAPI</text>
+<text x="532" y="222" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#516778">Internal modules in one deployable application</text>
+<rect x="510" y="875" width="440" height="295" rx="18" fill="#f7fafc" stroke="#a6bac5" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="532" y="1146" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#17364d">Persistent-data boundary</text>
+<rect x="1030" y="875" width="400" height="295" rx="18" fill="#f7fafc" stroke="#a6bac5" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="1052" y="1146" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" text-anchor="start" fill="#17364d">Model-artifact boundary</text>
+<rect x="60" y="1240" width="890" height="235" rx="18" fill="#f7fafc" stroke="#a6bac5" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="82" y="1274" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="start" fill="#17364d">Offline research environment</text>
+<polyline id="ui-request" points="395,290 560,290" fill="none" stroke="#087f8c" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-teal)" />
+<polyline id="api-response" points="560,355 395,355" fill="none" stroke="#17364d" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-navy)" />
+<polyline id="request-storage" points="640,415 640,530" fill="none" stroke="#087f8c" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-teal)" />
+<polyline id="storage-response" points="840,530 840,415" fill="none" stroke="#17364d" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-navy)" />
+<polyline id="request-estimate" points="1080,415 1080,530" fill="none" stroke="#087f8c" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-teal)" />
+<polyline id="estimate-response" points="1330,530 1330,415" fill="none" stroke="#17364d" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-navy)" />
+<polyline id="database-operation" points="640,685 640,963" fill="none" stroke="#087f8c" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-teal)" />
+<polyline id="database-response" points="835,964.3 835,685" fill="none" stroke="#17364d" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-navy)" />
+<polyline id="artifact-load" points="1110,685 1110,960" fill="none" stroke="#087f8c" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-teal)" />
+<polyline id="artifact-response" points="1330,960 1330,685" fill="none" stroke="#17364d" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-navy)" />
+<polyline id="candidate-review" points="530,1370 600,1370" fill="none" stroke="#087f8c" stroke-width="2.4" stroke-linejoin="round" marker-end="url(#arrow-teal)" />
+<polyline id="manual-model-release" points="920,1370 1460,1370 1460,1040 1400,1040" fill="none" stroke="#516778" stroke-width="2.4" stroke-linejoin="round" stroke-dasharray="9 6" marker-end="url(#arrow-muted)" />
+<rect x="85" y="240" width="310" height="190" rx="16" fill="#eff8f8" stroke="#087f8c" stroke-width="2.5"/>
+<text x="240" y="295.315" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#17364d">React interface</text>
+<text x="240" y="335.035" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Workload form</text>
+<text x="240" y="362.585" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">History and result states</text>
+<text x="240" y="390.135" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Data-control requests</text>
+<rect x="560" y="270" width="820" height="145" rx="16" fill="#eff8f8" stroke="#087f8c" stroke-width="2.5"/>
+<text x="970" y="313.69" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#17364d">API / request boundary</text>
+<text x="970" y="355.41" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#516778">Authentication and ownership checks</text>
+<text x="970" y="385.86" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" fill="#516778">Validation and orchestration</text>
+<rect x="560" y="530" width="350" height="155" rx="16" fill="#ffffff" stroke="#087f8c" stroke-width="2.5"/>
+<text x="735" y="580.87" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#17364d">Storage-access module</text>
+<text x="735" y="620.03" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Owner-filtered operations</text>
+<text x="735" y="647.58" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">History and data requests</text>
+<rect x="1030" y="530" width="350" height="155" rx="16" fill="#ffffff" stroke="#087f8c" stroke-width="2.5"/>
+<text x="1205" y="567.815" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#17364d">ML adapter</text>
+<text x="1205" y="607.535" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Eligibility and versions</text>
+<text x="1205" y="635.085" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Estimate and explanation</text>
+<text x="1205" y="662.635" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Explicit unavailable states</text>
+<path d="M 560 980 V 1085 C 560 1111.667 900 1111.667 900 1085 V 980" fill="#eff8f8" stroke="#087f8c" stroke-width="2.5"/>
+<ellipse cx="730" cy="980" rx="170" ry="20" fill="#eff8f8" stroke="#087f8c" stroke-width="2.5"/>
+<text x="730" y="1016.59" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#17364d">PostgreSQL</text>
+<text x="730" y="1056.31" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Owned records and versions</text>
+<text x="730" y="1083.86" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Data-request state</text>
+<rect x="1060" y="960" width="340" height="145" rx="16" fill="#eff8f8" stroke="#087f8c" stroke-width="2.5"/>
+<text x="1230" y="994.63" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#17364d">Reviewed artifacts</text>
+<text x="1230" y="1033.07" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Model and preprocessing</text>
+<text x="1230" y="1059.17" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Feature / scoring schema</text>
+<text x="1230" y="1085.27" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Versioned manifest</text>
+<rect x="60" y="540" width="360" height="300" rx="16" fill="#ffffff" stroke="#a6bac5" stroke-width="2.5"/>
+<text x="240" y="612.98" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#17364d">Design boundaries</text>
+<text x="240" y="651.42" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">No browser → database access</text>
+<text x="240" y="677.52" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Backend enforces ownership</text>
+<text x="240" y="703.62" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">No approved model:</text>
+<text x="240" y="729.72" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">return model_unavailable</text>
+<text x="240" y="755.82" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Unavailable means no score</text>
+<text x="240" y="781.92" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Research data access is separate</text>
+<rect x="60" y="915" width="360" height="245" rx="16" fill="#ffffff" stroke="#a6bac5" stroke-width="2.5"/>
+<text x="240" y="983.68" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#17364d">Outside initial scope</text>
+<text x="240" y="1023.12" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">LMS integration</text>
+<text x="240" y="1050.67" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Medical-record access</text>
+<text x="240" y="1078.22" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">Adviser workspace</text>
+<text x="240" y="1105.77" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" text-anchor="middle" fill="#516778">No active connections shown</text>
+<rect x="90" y="1305" width="440" height="130" rx="16" fill="#ffffff" stroke="#087f8c" stroke-width="2.5"/>
+<text x="310" y="1345.18" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#17364d">Research / training</text>
+<text x="310" y="1383.62" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Separate from the deployed service</text>
+<text x="310" y="1409.72" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">No automatic production training</text>
+<rect x="600" y="1305" width="320" height="130" rx="16" fill="#ffffff" stroke="#087f8c" stroke-width="2.5"/>
+<text x="760" y="1345.18" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" text-anchor="middle" fill="#17364d">Review and release</text>
+<text x="760" y="1383.62" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Evaluate suitability</text>
+<text x="760" y="1409.72" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Approve a versioned bundle</text>
+<rect x="406" y="241.525" width="142" height="36.95" rx="7" fill="white"/>
+<text x="477" y="265.78" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">HTTPS / JSON</text>
+<rect x="408" y="370.525" width="138" height="36.95" rx="7" fill="white"/>
+<text x="477" y="394.78" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Data / status</text>
+<rect x="580" y="453.525" width="120" height="36.95" rx="7" fill="white"/>
+<text x="640" y="477.78" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Read / write</text>
+<rect x="772" y="442.05" width="136" height="59.9" rx="7" fill="white"/>
+<text x="840" y="466.305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Records /</text>
+<text x="840" y="489.255" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">status</text>
+<rect x="1012.5" y="442.05" width="135" height="59.9" rx="7" fill="white"/>
+<text x="1080" y="466.305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Assess if</text>
+<text x="1080" y="489.255" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">eligible</text>
+<rect x="1260" y="442.05" width="140" height="59.9" rx="7" fill="white"/>
+<text x="1330" y="466.305" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Result /</text>
+<text x="1330" y="489.255" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">status</text>
+<rect x="565" y="806.525" width="150" height="36.95" rx="7" fill="white"/>
+<text x="640" y="830.78" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">SQL operations</text>
+<rect x="765" y="806.525" width="140" height="36.95" rx="7" fill="white"/>
+<text x="835" y="830.78" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Rows / status</text>
+<rect x="1032.5" y="806.525" width="155" height="36.95" rx="7" fill="white"/>
+<text x="1110" y="830.78" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Load by version</text>
+<rect x="1247.5" y="806.525" width="165" height="36.95" rx="7" fill="white"/>
+<text x="1330" y="830.78" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="middle" fill="#516778">Trusted artifacts</text>
+<rect x="1070" y="1288.7" width="260" height="62.6" rx="7" fill="white"/>
+<text x="1200" y="1313.97" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">Manual release only</text>
+<text x="1200" y="1338.27" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="400" text-anchor="middle" fill="#516778">After model review</text>
+<text x="60" y="1532" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" text-anchor="start" fill="#516778">Solid arrows: calls and returned data · Dashed arrow: reviewed artifact release · Backend boxes are internal modules</text>
+</svg>
