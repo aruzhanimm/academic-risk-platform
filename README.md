@@ -12,6 +12,8 @@ Academic Risk Platform is a diploma project exploring how explainable machine le
 
 The platform is intended to support students’ awareness and planning. It does not provide medical diagnoses or replace professional support.
 
+The repository currently contains analysis and design documents and a runnable static prototype with synthetic examples. The prototype demonstrates input, history, unavailable-result states and data-request previews using browser memory. A backend, authentication, persistent storage and a predictive model have not been implemented; participant evaluation and supervisor feedback remain outstanding.
+
 ## Problem and Target Users
 
 Students manage assignments, deadlines, and study time across multiple tools. The project investigates whether bringing these observations together can help students recognise changes in their workload and understand the factors behind a risk estimate.
@@ -41,7 +43,7 @@ The initial prototype is planned around four capabilities:
 1. **Workload input:** record selected workload observations and their dates through a concise form.
 2. **Personal history:** review changes over time and identify missing observations.
 3. **Explainable estimates:** display an estimate together with relevant contributing factors and its limitations, when supported by an evaluated model and sufficient data.
-4. **Data control:** restrict access to each student’s records and provide clear controls over sharing and deletion.
+4. **Data control:** restrict access to each student’s records and provide clear controls for export and deletion requests.
 
 Academic overload and emotional burnout will be treated as distinct outcomes. Forecasting experiments require repeated observations and outcomes measured after the prediction time; a current-state assessment will be reported separately from a future prediction. Model evaluation will account for student identity, time, and the availability of each feature at prediction time.
 
@@ -65,7 +67,7 @@ Academic overload and emotional burnout will be treated as distinct outcomes. Fo
 | Version control and review | Git and GitHub |
 | Task management | YouTrack |
 
-Technology choices will be assessed against the requirements and documented alongside the alternatives considered.
+The [technology comparison](docs/05_technology_comparison.md) and [proposed architecture decisions](docs/adr/README.md) explain these choices and their alternatives. The current interaction prototype uses plain HTML, CSS and JavaScript; React remains the proposed frontend for the future application.
 
 ## Future Directions
 
@@ -79,7 +81,7 @@ academic-risk-platform/
 ├── docs/             # Project documentation and decisions
 ├── research/         # Literature, data assessment, and experiment protocols
 ├── diagrams/         # Editable diagram sources and readable exports
-├── prototypes/       # Interface mockups and user flows
+├── prototypes/       # Runnable synthetic prototype and screen captures
 ├── src/
 │   ├── backend/      # API and application services
 │   ├── frontend/     # Student-facing interface
@@ -91,15 +93,28 @@ academic-risk-platform/
 
 Directory guides describe the intended contents; they do not represent an implemented application.
 
+## Run the Prototype
+
+From the repository root, start a local static server with Python 3:
+
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1 --directory prototypes
+```
+
+Open [http://localhost:8000](http://localhost:8000) in a browser. Stop the server with `Ctrl+C`. No package installation or build step is required.
+
+Use synthetic values only. Refreshing the page resets the in-memory demonstration; export and deletion requests are previews and no risk score is calculated. For a manual check, explore observation entry, history, result availability and data control. The [prototype guide](prototypes/README.md) describes the sources, and the [UX specification](docs/08_ux_prototype.md) records coverage and planned walkthrough tasks. These checks do not establish backend behaviour or model validity.
+
 ## Project Resources
 
 - **Repository:** [aruzhanimm/academic-risk-platform](https://github.com/aruzhanimm/academic-risk-platform)
 - **Contributing:** [workflow and review guidelines](CONTRIBUTING.md)
-- **Documentation:** [document guide](docs/README.md)
+- **Documentation:** [document guide](docs/README.md) and [project proposal](docs/01_project_proposal.md)
+- **Planning:** [project management](docs/10_project_management/README.md), [task register](docs/10_project_management/task_register.md), [milestones](docs/10_project_management/milestones.md) and [risks](docs/10_project_management/risks.md)
 - **Research:** [research guide](research/README.md)
 - **Design:** [diagrams](diagrams/README.md) and [prototypes](prototypes/README.md)
 - **Engineering:** [backend](src/backend/README.md), [frontend](src/frontend/README.md), [ML](src/ml/README.md), and [tests](tests/README.md)
 - **Data:** [data handling and documentation](data/README.md)
-- **YouTrack:** the project link will be added after setup.
+- **YouTrack:** [Academic Risk Platform project](https://academic-risk-platform.youtrack.cloud/projects/ARP) and [task board](https://academic-risk-platform.youtrack.cloud/agiles/204-1/218-1)
 
-Installation, execution, and testing instructions will accompany the runnable components when they are added to the repository.
+Backend and model setup and test commands will be added with their implementations.

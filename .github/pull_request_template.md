@@ -7,8 +7,6 @@ What problem does this change address, and what is the resulting behaviour or de
 - YouTrack ID and URL:
 - Acceptance criteria addressed:
 
-If YouTrack is not yet configured during the initial setup, state this and add the task link after setup.
-
 ## Changes
 
 List the relevant files or components and explain any important design decisions.
