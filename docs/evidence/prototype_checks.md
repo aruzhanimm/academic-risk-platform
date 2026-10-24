@@ -11,6 +11,6 @@ Browser checks completed on 24 October 2026 against the static prototype in this
 | Exact duplicate | Submitting that same record again keeps the number of records unchanged and displays a duplicate message. |
 | Data request preview | Selecting deletion and confirming the preview displays a pending example and explicitly states that no request was sent and no export or deletion was performed. |
 | Reset | Reset restores the three initial sample observations, including the latest record of 28 hours and three deadlines. |
-| Narrow screen | The updated result explanation was inspected at a 390-pixel viewport. Navigation, text and actions remain visible without overlapping content. |
+| Narrow screen | The updated result explanation was inspected at an actual 500-pixel viewport. Both `window.innerWidth` and the document's `scrollWidth` were 500. Navigation, text and actions remain visible without horizontal overflow or overlapping content. |
 
 The result wording was revised after the ambiguity identified in the [interview synthesis](interview_synthesis.md). A follow-up participant check is needed to determine whether the revised wording improves understanding.
