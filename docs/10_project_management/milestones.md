@@ -1,16 +1,16 @@
 # Milestones and dependencies
 
-**Snapshot: 24 October 2026, Asia/Almaty. Targets and completion evidence are recorded separately.**
+**Snapshot: 24 October 2026, Astana time. Targets and completion evidence are recorded separately.**
 
-The confirmed submission deadline is **24 October 2026 at 18:00, Asia/Almaty**. Final form access, correct uploads and successful submission still require confirmation.
+The confirmed submission deadline is **24 October 2026 at 18:00, Astana time**. Final form access, correct uploads and successful submission still require confirmation.
 
 ## Starting point
 
 - PRs #1–#8 are merged in publication baseline [b5f53a8](https://github.com/aruzhanimm/academic-risk-platform/commit/b5f53a8de488113a8c34d8f638b4fa71ee300aa6), including the evaluation plan, proposal, management, user evidence and report. Substantive peer review remains pending under [ARP-13].
 - The interactive prototype uses synthetic examples and browser memory only. It has no backend, authentication, persistent storage or forecasting model; export/deletion interactions are previews.
-- The [user-needs study](../02_user_interviews.md) synthesises five interview records and nine questionnaire submissions, with unresolved session metadata and interpretation limits. [Supervisor feedback](../11_supervisor_feedback.md) has not been recorded.
-- Fourteen YouTrack issues, ARP-2–ARP-15, are recorded as ten Done, three In Progress and one To do. The [task register](task_register.md) identifies the remaining conditions.
-- The 35-page report PDF, editable Word document and revised prototype are published on main through [PR #8](https://github.com/aruzhanimm/academic-risk-platform/pull/8).
+- The [user-needs study](../02_user_interviews.md) synthesises five interview records and nine questionnaire submissions, with unresolved session metadata and interpretation limits. [Supervisor feedback and responses](../11_supervisor_feedback.md) are recorded from the comments supplied on 24 October. All five expected next-review deliverables remain open.
+- The first-period group has fourteen issues, ARP-2–ARP-15: ten Done, three In Progress and one To do at the verified snapshot. ARP-12 remains To do pending recording/publication acceptance. Three verified next-stage tasks, [ARP-16]–[ARP-18], are all To do with due dates unset, bringing the total to 17. The [task register](task_register.md) separates the two groups.
+- [PR #8](https://github.com/aruzhanimm/academic-risk-platform/pull/8) published the earlier report and revised prototype on main. The updated 36-page report and editable Word document include received feedback and are prepared for the final publication.
 - The repository and hosted prototype are public. [Access checks](../evidence/access_checks.md) passed for all 13 selected URLs; four views and the actual 500-pixel layout were checked. The seven-page [YouTrack evidence PDF](../../reports/prob-period-1/SE-2423_Kartam_YouTrack.pdf) is prepared and checked. Final publication/revision matching, the submission tag and form submission remain pending.
 
 This submission consolidates research, design, prototype, management and evidence. It does not depend on completing a production application or training a model.
@@ -35,15 +35,15 @@ The following due-date fields match the live-task snapshot. Dates through 20 Oct
 
 | Milestone | Target | Dependencies | Coordinating owner | Completion evidence | Position at snapshot |
 | --- | --- | --- | --- | --- | --- |
-| Confirm the submission route and uploads · [ARP-15] | Before 24 October, 18:00 Asia/Almaty | Live form and confirmed deadline | Aruzhan Kartam | Correct form access, two required PDFs and retained submission confirmation. | Deadline confirmed; form submission pending. |
+| Confirm the submission route and uploads · [ARP-15] | Before 24 October, 18:00 Astana time | Live form and confirmed deadline | Aruzhan Kartam | Correct form access, two required PDFs and retained submission confirmation. | Deadline confirmed; form submission pending. |
 | Consolidate documentation · [ARP-8], [ARP-9], [ARP-10], [ARP-13] | 23 October | Published baseline; final user-evidence and submission additions | Aruzhan Kartam: integration; Vitaliy Golubenko: cross-review coordination | Review comments resolved; materials integrated; all original report requirements covered or gaps identified. Another member reviews Vitaliy's contributions. | Final additions merged through PR #8. Eight prototype checks recorded; substantive team confirmation and final reconciliation remain outstanding. |
-| Reconcile task tracking and delivery evidence · [ARP-10] | 23 October | Fourteen live issues and published deliverables | Aruzhan Kartam; all members check their entries | Issue fields, acceptance criteria and commit/PR links agree with the register and actual outcomes. | Live board verified at ten Done, three In Progress and one To do; board and task captures included in the prepared evidence PDF. |
-| Record user evidence and supervisor feedback · [ARP-11], [ARP-12] | 24 October, before the freeze | Reviewable materials; participant and supervisor availability | Saniya Yerzhan: user evidence; Aruzhan Kartam: supervisor feedback | Required relevance evidence, dated anonymised observations, feedback, decisions and revision links. | ARP-11 In Progress: evidence synthesised, metadata and interpretation checks remain. ARP-12 To do: supervisor feedback outstanding. |
+| Reconcile task tracking and delivery evidence · [ARP-10] | 23 October | Fourteen first-period issues, three next-stage follow-ups and published deliverables | Aruzhan Kartam; all members check their entries | Issue fields, acceptance criteria and commit/PR links agree with the register and actual outcomes. | Board and task evidence prepared at the verified ten Done / three In Progress / one To do snapshot. Refresh the evidence after verified feedback-task updates. |
+| Record user evidence and supervisor feedback · [ARP-11], [ARP-12] | 24 October, before the freeze | Reviewable materials; participant and supervisor availability | Saniya Yerzhan: user evidence; Aruzhan Kartam: supervisor feedback | Required relevance evidence, dated anonymised observations, feedback, decisions and revision links. | ARP-11 In Progress: evidence synthesised, metadata and interpretation checks remain. Supervisor feedback and an eight-comment response register are now recorded; verify the ARP-12 tracker update separately. |
 | Verify access · [ARP-14] | Before submission | Public repository; hosted prototype; diagrams and sources | Vitaliy Golubenko | Dated checks of repository, prototype and diagram/source URLs under intended committee access conditions. | Done: access checks passed at b5f53a8 for 13/13 public URLs and file matches, four prototype views and the actual 500-pixel layout. Recheck report downloads after any replacement. |
 | Capture task and review evidence · [ARP-15] | 24 October | Reconciled tasks, deliverables and actual reviews | Aruzhan Kartam; each member checks their contribution record | Readable board/issue captures with assignees, priorities, deadlines and statuses; a completed example includes expected outcome, acceptance criteria and commit/PR link. | Seven-page [YouTrack evidence PDF](../../reports/prob-period-1/SE-2423_Kartam_YouTrack.pdf) prepared and visually checked; substantive human review evidence remains outstanding. |
 | Freeze the source revision · [ARP-15] | 24 October, before final PDF verification | Consolidation; feedback/review decisions; access and task evidence | Aruzhan Kartam; all members confirm their information | One source commit recorded; all 11 report sections checked; links, statuses and remaining gaps reconciled. | Completion evidence pending. |
-| Build and check both PDFs · [ARP-15] | 24 October | Frozen source, evidence captures and verified team details | Aruzhan Kartam | One board/task PDF, at most 10 MB; one main report, at most 100 MB, with all 11 sections in order, contents and accessible supporting links. Main filename: `SE-2423_Kartam_ProbPeriod1.pdf`. Both open correctly and match the source revision. | The 35-page report, Word document and seven-page YouTrack PDF are prepared and visually checked. The YouTrack PDF is 4,167,113 bytes, below the 10 MB limit. Final publication/revision matching remains pending. |
-| Tag and submit · [ARP-15] | 24 October, before 18:00 Asia/Almaty | Checked PDFs, form details, access and team confirmation | Aruzhan Kartam, team representative | `prob-period-1` resolves to the frozen commit. The form contains the direct tag/repository URLs, accurate member details and contribution links; both PDFs are uploaded and confirmation retained. | Completion evidence pending. |
+| Build and check both PDFs · [ARP-15] | 24 October | Frozen source, evidence captures and verified team details | Aruzhan Kartam | One board/task PDF, at most 10 MB; one main report, at most 100 MB, with all 11 sections in order, contents and accessible supporting links. Main filename: `SE-2423_Kartam_ProbPeriod1.pdf`. Both open correctly and match the source revision. | Report, Word and YouTrack artifacts were prepared and visually checked. Update the final versions for the newly received feedback and verified issue changes, then repeat layout, size and publication/revision checks. |
+| Tag and submit · [ARP-15] | 24 October, before 18:00 Astana time | Checked PDFs, form details, access and team confirmation | Aruzhan Kartam, team representative | `prob-period-1` resolves to the frozen commit. The form contains the direct tag/repository URLs, accurate member details and contribution links; both PDFs are uploaded and confirmation retained. | Completion evidence pending. |
 
 ## Dependency sequence
 
@@ -67,7 +67,7 @@ Check the main report's 11 sections against the original prescribed order and th
 
 ## Future gates
 
-Schedule the following work after the first submission review and confirmation of its dependencies.
+The supervisor specifies [five deliverables before the next review](../11_supervisor_feedback.md#expected-before-the-next-review): a feasibility decision, findings and updated requirements, a tested application slice, a reproducible research/verification record, and traceable project evidence with responses. All remain open; the next review date is unspecified. [ARP-16] covers feasibility and permissions, [ARP-17] the tested application/API workflow, and [ARP-18] the audit and protocol. [ARP-11] continues findings and UX work; [ARP-13] and [ARP-15] cover review and publication evidence. Use the following dependency gates to schedule that work.
 
 | Gate | Depends on | Evidence required to proceed | Owner | If unmet |
 | --- | --- | --- | --- | --- |
@@ -93,3 +93,9 @@ The [risk register](risks.md) tracks threats to these milestones. Requirements, 
 [ARP-13]: https://academic-risk-platform.youtrack.cloud/issue/ARP-13/Perform-and-record-cross-document-peer-review
 [ARP-14]: https://academic-risk-platform.youtrack.cloud/issue/ARP-14/Provide-committee-accessible-prototype-and-review-access
 [ARP-15]: https://academic-risk-platform.youtrack.cloud/issue/ARP-15/Assemble-the-submission-PDFs-exact-tag-and-form-evidence
+
+[ARP-16]: https://academic-risk-platform.youtrack.cloud/issue/ARP-16
+
+[ARP-17]: https://academic-risk-platform.youtrack.cloud/issue/ARP-17
+
+[ARP-18]: https://academic-risk-platform.youtrack.cloud/issue/ARP-18

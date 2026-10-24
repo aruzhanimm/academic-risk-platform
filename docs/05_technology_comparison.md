@@ -1,6 +1,6 @@
 # 05. Technology Comparison
 
-Official documentation checked: **23 October 2026, Asia/Almaty**. The choices below are proposed design decisions for the initial prototype.
+Official documentation checked: **23 October 2026, Astana time**. The choices below are proposed design decisions for the initial prototype.
 
 ## Scope and decision criteria
 

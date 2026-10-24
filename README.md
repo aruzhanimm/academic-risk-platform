@@ -45,7 +45,7 @@ This is a small convenience sample. Survey and interview participation may overl
 
 The [technology comparison](docs/05_technology_comparison.md), [architecture](docs/07_architecture.md) and [ADRs](docs/adr/README.md) explain the alternatives and decisions. Diagram [JSON sources and SVG exports](diagrams/README.md) remain editable.
 
-Forecasting requires outcomes measured after prediction time, suitable repeated observations and validation separated by student and time. The [evaluation plan](docs/09_verification_evaluation.md) defines baselines, leakage checks and acceptance gates. Measurement, permitted data access, substantive team review and [supervisor feedback](docs/11_supervisor_feedback.md) remain open. Moodle integration and adviser access are later extensions with separate access requirements.
+Forecasting requires outcomes measured after prediction time, suitable repeated observations and validation separated by student and time. The [evaluation plan](docs/09_verification_evaluation.md) defines baselines, leakage checks and acceptance gates. Measurement, permitted data access, substantive team review and the required actions from [received supervisor feedback](docs/11_supervisor_feedback.md) remain open. Moodle integration and adviser access are later extensions with separate access requirements.
 
 ## Team
 

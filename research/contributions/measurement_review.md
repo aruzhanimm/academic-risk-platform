@@ -1,6 +1,6 @@
 # Measuring Academic Overload and Student Burnout
 
-**Working draft for team review — 22 October 2026.** Bibliographic details and the sections listed below were checked against open full texts on **21 October 2026 (Asia/Almaty)**. This is a thematic review, not an exhaustive systematic review. It contains no AITU participant data, local instrument validation, or project experiment results. This English edition preserves those source checks; no new web verification was performed during its preparation.
+**Working draft for team review — 22 October 2026.** Bibliographic details and the sections listed below were checked against open full texts on **21 October 2026 (Astana time)**. This is a thematic review, not an exhaustive systematic review. It contains no AITU participant data, local instrument validation, or project experiment results. This English edition preserves those source checks; no new web verification was performed during its preparation.
 
 ## Search and selection
 

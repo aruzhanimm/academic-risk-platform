@@ -1,6 +1,6 @@
 # Search and Source-Verification Log
 
-**Working draft for team review.** The original searches and reading recorded below took place on **21 October 2026, Asia/Almaty**. English package prepared: **22 October 2026**. A separate final section records limited checks performed while preparing this package.
+**Working draft for team review.** The original searches and reading recorded below took place on **21 October 2026, Astana time**. English package prepared: **22 October 2026**. A separate final section records limited checks performed while preparing this package.
 
 This log consolidates the recorded work on [measurement](contributions/measurement_review.md), [machine learning](contributions/ml_validation_review.md), and the three official engineering documents listed in the [bibliography](bibliography.md).
 

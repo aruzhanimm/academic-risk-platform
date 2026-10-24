@@ -1,6 +1,6 @@
 # 07. Proposed System Architecture
 
-**Content: Draft. Team review: Pending. Prepared: 23 October 2026, Asia/Almaty.**
+**Content: Draft. Team review: Pending. Prepared: 23 October 2026, Astana time.**
 
 This conceptual design translates the [six functional and six non-functional requirements](06_requirements_specification.md) into boundaries, records, and observable behaviour. It follows the published [technology comparison](05_technology_comparison.md) and [proposed ADRs](adr/README.md); it does not describe an implemented application.
 
@@ -107,4 +107,4 @@ Ownership checks cover related records and derived artifacts, not just the obser
 
 Before personal-data collection or deployment, resolve authentication/session protection, hosting/TLS, persistence/migrations, retention/backups, export storage/expiry, and request idempotency. Define correction endpoints if saved-record editing is added; none is specified above.
 
-Before enabling inference, resolve the target, instrument/permissions, horizon, suitable data, evaluation, trusted artifact loading, resource limits, and explanation method. Snapshot references must prevent stale or cross-account results. The [research protocol](../research/RESEARCH_PROTOCOL.md) and [literature review](03_literature_review.md) constrain those decisions. Requirements and ADR acceptance, security checks, performance measurements, and user walkthroughs remain pending.
+Before enabling inference, resolve the target, instrument/permissions, horizon, suitable data, evaluation, trusted artifact loading, resource limits, and explanation method. Snapshot references must prevent stale or cross-account results. The [research protocol](../research/RESEARCH_PROTOCOL.md) and [literature review](03_literature_review.md) constrain those decisions. Requirements and ADR acceptance, security checks and performance measurements remain pending. [Exploratory interview and walkthrough records](02_user_interviews.md) are documented; standardised follow-up and participant retesting of the revised result wording remain pending.

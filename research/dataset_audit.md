@@ -1,6 +1,6 @@
 # Candidate Dataset Audit
 
-**Working draft for team review.** Source checks: **21 October 2026, Asia/Almaty**. The audit examines public descriptions, published schemas, and data-availability statements. **Individual-level data files were not downloaded or inspected.** All candidates have a **metadata-only** assessment; no model training, distribution analysis, duplicate count, or record-level quality check was performed.
+**Working draft for team review.** Source checks: **21 October 2026, Astana time**. The audit examines public descriptions, published schemas, and data-availability statements. **Individual-level data files were not downloaded or inspected.** All candidates have a **metadata-only** assessment; no model training, distribution analysis, duplicate count, or record-level quality check was performed.
 
 **Conclusion from the limited search:** a suitable, accessible dataset for predicting future student burnout has **not been confirmed**. This conclusion concerns the candidates examined, not the existence of such data anywhere.
 

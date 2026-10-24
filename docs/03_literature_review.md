@@ -1,6 +1,6 @@
 # 03. Critical Literature Review
 
-Original source checks: **21 October 2026, Asia/Almaty**. English package prepared: **22 October 2026**.
+Original source checks: **21 October 2026, Astana time**. English package prepared: **22 October 2026**.
 
 This review substantively uses **13 unique sources: 10 peer-reviewed scientific publications**—nine journal articles and one conference paper—**and three official technical documents**. Technical documentation is counted separately from scientific publications, and a preprint and its published version are not counted twice. The search was targeted and thematic; it does not claim systematic or exhaustive coverage. Two foundational publications from 2017 and two methodologically relevant publications from 2021 fall outside the strict five-year window. Their specific roles are explained below; this is not a review limited to the latest publications.
 

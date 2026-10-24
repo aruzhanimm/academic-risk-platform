@@ -4,7 +4,7 @@
 
 This plan defines how the proposed platform and research claims will be evaluated. It implements submission requirement 9 and follows the [requirements specification](06_requirements_specification.md), [architecture](07_architecture.md), [UX prototype](08_ux_prototype.md), and [ML validation review](../research/contributions/ml_validation_review.md).
 
-Three questions require separate evidence: does the software satisfy its requirements, does a model predict the intended outcome under valid conditions, and do students understand the interface? A working screen cannot answer the second question; an accurate model cannot establish the first or third. The current artifact is a synthetic interaction prototype. Backend acceptance tests, forecasting experiments, and participant walkthroughs remain planned.
+Three questions require separate evidence: does the software satisfy its requirements, does a model predict the intended outcome under valid conditions, and do students understand the interface? A working screen cannot answer the second question; an accurate model cannot establish the first or third. The current artifact is a synthetic interaction prototype. Backend acceptance tests and forecasting experiments remain planned. [Exploratory interview and walkthrough records](02_user_interviews.md) are documented; standardised follow-up and participant retesting of the revised result wording remain pending.
 
 ## 1. Evaluation scope and decision gates
 
@@ -137,7 +137,7 @@ Preserve private split/prediction files under appropriate access controls. Publi
 
 **Planned responsibility:** Aruzhan maintains the dataset gate, experiment protocol, metrics and reproducibility; Vitaliy implements technical acceptance and performance checks; Saniya coordinates measurement/feature review, ablations, walkthroughs and error interpretation. Each result records its actual executor and reviewer. These responsibilities do not imply completed experiments or reviews.
 
-The next research decision is whether a permitted dataset can supply independent, temporally suitable outcomes. Until it does, the useful deliverables are the documented protocol, verified synthetic interactions and implementation acceptance criteria. Student discussions and supervisor decisions must be added from actual evidence before the final report is considered complete.
+The next research decision is whether a permitted dataset can supply independent, temporally suitable outcomes. Until it does, the useful deliverables are the documented protocol, verified synthetic interactions and implementation acceptance criteria. The [user-needs study](02_user_interviews.md) records exploratory findings, and the [supervisor feedback register](11_supervisor_feedback.md) records received comments and required actions. Confirm unresolved session details, complete the planned follow-up checks and retain evidence for each resulting decision.
 
 ### Source notes
 
