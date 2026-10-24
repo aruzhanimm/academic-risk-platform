@@ -1,4 +1,4 @@
-# User Research Evidence
+# Research and Verification Evidence
 
 The material below supports [User Interviews and Evidence of Relevance](../02_user_interviews.md). It combines aggregate questionnaire results with a paraphrased synthesis of five interview records. Raw responses, participant contacts and private notes are not included.
 
@@ -10,4 +10,4 @@ The material below supports [User Interviews and Evidence of Relevance](../02_us
 
 The questionnaire and interview samples may overlap. Neither source is a training dataset, a burnout measurement or a representative sample of the university. The results inform requirements and further testing.
 
-[Prototype verification](prototype_checks.md) records the browser checks completed after the result wording was revised.
+[Prototype verification](prototype_checks.md) records the browser checks completed after the result wording was revised. [Public access verification](access_checks.md) records unauthenticated URL and file-integrity checks, published-prototype navigation and the actual 500-pixel layout check.

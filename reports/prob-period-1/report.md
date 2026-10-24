@@ -22,7 +22,7 @@ Our aim is to develop a student application and investigate whether earlier obse
 
 The initial user is a student viewing their own records. Four workflows define the scope: add an observation, review history, inspect a result, and manage personal data. An adviser workspace, Moodle or calendar imports, reminders and links to university support services are possible later extensions. They need their own requirements and access arrangements.
 
-The [dataset audit](../../research/dataset_audit.md) and [feature register](../../research/feature_operationalization.md) have not confirmed a suitable accessible longitudinal burnout dataset. Before forecasting is possible, we need repeated observations linked to the same students and an independently measured later outcome. The instrument, language, scoring and horizon are still open. If suitable data cannot be obtained, we will discuss a collection protocol or a narrower research question with the supervisor.
+The [dataset audit](../../research/dataset_audit.md) and [feature register](../../research/feature_operationalization.md) have not confirmed a suitable accessible longitudinal burnout dataset. Before forecasting is possible, we need repeated observations linked to the same students and an independently measured later outcome. The instrument, language, scoring and horizon are still open. The supervisor requires an evidence-based feasibility decision and a narrower fallback if future prediction cannot be supported.
 
 Until an evaluated model is available, the interface shows `model_unavailable` and no numerical risk score. Sample records let us review the interaction without presenting them as participant data or model results.
 
@@ -303,7 +303,7 @@ TECH-01. [FastAPI, Features](https://fastapi.tiangolo.com/features/); TECH-02. [
 
 ## Scope and priorities
 
-These requirements come from the proposal, literature and design comparisons. The user evidence in Section 2 informs their priorities; supervisor review remains pending. The student is the main actor. Private operations require an authenticated identity; an operator manages approved configurations without routine access to student answers.
+These requirements come from the proposal, literature and design comparisons. User evidence in Section 2 and supervisor comments in Section 11 inform their refinement. The student is the main actor. Private operations require an authenticated identity; an operator manages approved configurations without routine access to student answers.
 
 “Must” marks a condition required before accepting the relevant capability. “Should” marks a target that may be deferred with a recorded reason. A conditional requirement applies only when its stated condition is met. The current static prototype does not implement server storage, ownership or real estimation.
 
@@ -516,11 +516,11 @@ The [full evaluation plan](../../docs/09_verification_evaluation.md) retains det
 
 ## Responsibilities and delivery
 
-The repository contains research and design documents, the synthetic interaction prototype, evaluation procedures and management records. Published PRs 1 to 7 establish the earlier deliverables. The current submission incorporates the user-evidence synthesis; substantive peer review and supervisor decisions are recorded separately.
+The repository contains research and design documents, the synthetic interaction prototype, evaluation procedures and management records. Published PRs 1 to 8 establish the earlier deliverables. The current submission incorporates user evidence and the supervisor response in Section 11; substantive peer review remains open.
 
 | Member | Coordinating responsibility | Delivery references |
 | --- | --- | --- |
-| Aruzhan Kartam | Proposal, research and evaluation design, management, supervisor feedback and submission assembly. | Repository foundation, [PR 6](https://github.com/aruzhanimm/academic-risk-platform/pull/6) and [PR 7](https://github.com/aruzhanimm/academic-risk-platform/pull/7). |
+| Aruzhan Kartam | Proposal, research and evaluation design, management, supervisor feedback and submission assembly. | Repository foundation, [PR 6](https://github.com/aruzhanimm/academic-risk-platform/pull/6), [PR 7](https://github.com/aruzhanimm/academic-risk-platform/pull/7) and [PR 8](https://github.com/aruzhanimm/academic-risk-platform/pull/8). |
 | Vitaliy Golubenko | Technology, requirements, architecture, technical verification, access and review coordination. Interviewer for the five supplied interview records. | [PR 3](https://github.com/aruzhanimm/academic-risk-platform/pull/3), [PR 4](https://github.com/aruzhanimm/academic-risk-platform/pull/4) and the evidence record in Section 2. |
 | Saniya Yerzhan | Literature, measurement, system comparison, UX, user-evidence synthesis and interpretation. | [PR 1](https://github.com/aruzhanimm/academic-risk-platform/pull/1), [PR 2](https://github.com/aruzhanimm/academic-risk-platform/pull/2) and [PR 5](https://github.com/aruzhanimm/academic-risk-platform/pull/5). |
 
@@ -528,22 +528,22 @@ Vitaliy coordinates cross-review, while another member reviews his contributions
 
 ## Task tracking and remaining gates
 
-The [YouTrack board](https://academic-risk-platform.youtrack.cloud/agiles/204-1/218-1) and [issue list](https://academic-risk-platform.youtrack.cloud/issues/ARP) contain fourteen tasks with owners, priorities, due dates, acceptance criteria and delivery links. The [task register](../../docs/10_project_management/task_register.md) retains the detailed mappings; the table below distinguishes published material from remaining acceptance evidence.
+The [YouTrack board](https://academic-risk-platform.youtrack.cloud/agiles/204-1/218-1) and [issue list](https://academic-risk-platform.youtrack.cloud/issues/ARP) track fourteen first-period tasks with owners, priorities, due dates, acceptance criteria and delivery links. Three next-stage tasks add feasibility (ARP-16, Aruzhan, Critical), the application slice (ARP-17, Vitaliy, Major) and the data audit/protocol (ARP-18, Aruzhan, Major). All three are To do without due dates because the next review date is unspecified. The [task register](../../docs/10_project_management/task_register.md) maps the seventeen tasks; the table below summarises first-period evidence.
 
 | Issues | Scope | Evidence position |
 | --- | --- | --- |
 | [ARP-2 to ARP-10](https://academic-risk-platform.youtrack.cloud/issues/ARP) | Foundation, literature, systems, technologies, requirements, architecture, UX, evaluation, proposal and management. | Reviewable deliverables published in the repository; final report links use the submission tag. |
 | [ARP-11](https://academic-risk-platform.youtrack.cloud/issue/ARP-11) | User needs and their implications for requirements. | Nine questionnaire submissions and five interview records are synthesised in Section 2, with provenance limitations and follow-up decisions. |
-| [ARP-12](https://academic-risk-platform.youtrack.cloud/issue/ARP-12) | Supervisor feedback and resulting changes. | Substantive comments have not yet been received; Section 11 identifies the decisions sought. |
+| [ARP-12](https://academic-risk-platform.youtrack.cloud/issue/ARP-12) | Supervisor feedback and resulting changes. | Eight comments were supplied on 24 October. Section 11 records responses and open next-stage actions. |
 | [ARP-13](https://academic-risk-platform.youtrack.cloud/issue/ARP-13) | Cross-document peer review. | Reviewer comments, corrections and resolution evidence remain to be recorded. |
-| [ARP-14](https://academic-risk-platform.youtrack.cloud/issue/ARP-14) | Prototype and repository access for reviewers. | Hosted prototype and source links are provided; final viewer-access checks are part of the submission gate. |
+| [ARP-14](https://academic-risk-platform.youtrack.cloud/issue/ARP-14) | Prototype and repository access for reviewers. | Public prototype and repository access checks are recorded. Live YouTrack access requires an account; its evidence PDF is provided. |
 | [ARP-15](https://academic-risk-platform.youtrack.cloud/issue/ARP-15) | Final PDFs, repository tag and form. | This eleven-section report, a separate YouTrack evidence PDF and the form must refer to one reviewed repository revision. |
 
 Task due dates through 20 October follow recorded commit-date references. Issue creation, work, review and publication timestamps are separate records. The live issues hold current states; the report does not treat an issue status as a substitute for its acceptance evidence.
 
 ## Submission sequence and dependencies
 
-The submission target is 24 October 2026. First reconcile the user findings, peer review and supervisor-feedback status with the source documents. Then check the hosted prototype, repository and editable-diagram access; freeze the source revision; and produce matching report and task-evidence PDFs. The tag is [prob-period-1](https://github.com/aruzhanimm/academic-risk-platform/tree/prob-period-1). Its direct link identifies the submitted source snapshot.
+The submission deadline is 24 October 2026, 18:00 Astana time. First reconcile the user findings, peer review and supervisor-feedback status with the source documents. Then check the hosted prototype, repository and editable-diagram access; freeze the source revision; and produce matching report and task-evidence PDFs. The tag is [prob-period-1](https://github.com/aruzhanimm/academic-risk-platform/tree/prob-period-1). Its direct link identifies the submitted source snapshot.
 
 | Gate | Required input | Evidence for completion |
 | --- | --- | --- |
@@ -559,7 +559,7 @@ Later implementation depends on an agreed measurement/data protocol, secure pers
 | Risk | Likelihood and impact | Owner and response |
 | --- | --- | --- |
 | User evidence is overinterpreted or loses its provenance. | Medium / High | Saniya and Vitaliy. Retain the small convenience-sample limits, unconfirmed interview metadata and permitted wording; link findings to proposed changes. |
-| Supervisor feedback or peer review is incomplete. | High / High | Aruzhan and Vitaliy. Record actual comments and decisions; keep unresolved approval and changes visible. |
+| Supervisor actions or peer review remain incomplete. | High / High | Aruzhan and Vitaliy. Address the recorded comments and retain actual review evidence; keep outstanding actions visible. |
 | Available data cannot support future burnout prediction. | High / High | Aruzhan and Saniya. Resolve outcome, instrument, permissions, linkage and horizon before training; revise the research question when necessary. |
 | Information leaks across research partitions. | Medium / High | Aruzhan. Audit availability times, repeated students, outcome reuse, overlapping windows and training-only transformations. |
 | Personal data precede verified access and lifecycle controls. | Medium / High | Vitaliy. Keep the prototype synthetic; test ownership, logs, retention, export and deletion before a pilot. |
@@ -569,17 +569,33 @@ The [full risk register](../../docs/10_project_management/risks.md) identifies t
 
 # 11 Supervisor Feedback
 
-## Current feedback status
+## Feedback received
 
-Supervisor feedback remains pending. The following decisions are requested before the next implementation and research stage.
+Akbota Rakym's feedback was supplied through the team representative on 24 October 2026. The writing date and exact reviewed revision are unconfirmed; the supplied page references concern that earlier report. The supervisor described a strong research and design submission, particularly the literature, testable requirements and distinction between workload, burnout measurement and demonstration data. The main concern is prediction feasibility.
 
-## Decisions requested
+The supervisor did not independently verify repository activity, prototype execution, interviews or experiments. This response records current evidence and planned changes; it does not claim approval of implementation or results. The [full response register](../../docs/11_supervisor_feedback.md) tracks the actions through [ARP-12](https://academic-risk-platform.youtrack.cloud/issue/ARP-12).
 
-| Topic | Decision sought | Follow-up |
+## Comments and responses
+
+Priorities follow the supplied feedback. All remaining actions below are open.
+
+| Comment and priority | Current evidence | Response before the next review |
 | --- | --- | --- |
-| Student need and scope | Does the initial workload-recording and personal-history workflow address a suitable diploma problem, given the limited user evidence? | Confirm priorities and record any requirement changes. |
-| Measurement and data | Which primary construct, instrument/language and permitted longitudinal data route are feasible? | Complete the measurement/data audit before selecting a forecasting endpoint. |
-| Evaluation | Are the proposed baselines, student/time separation and acceptance gates appropriate? | Freeze the agreed protocol before final-test access. |
-| Implementation | Which user, data-control and access requirements should guide the first backend iteration? | Update the backlog and architecture decisions with the review outcome. |
+| **1. Prediction feasibility and scope: Critical** | The dataset audit has not established a suitable longitudinal burnout dataset. Outcome, instrument and horizon remain unresolved. | Choose overload or burnout, instrument/version, language, scoring and horizon. Verify legal/ethical access and repeated measurements. Record a supported feasibility decision and fallback scope. |
+| **2. User research: High** | The current Section 2 contains five interview records and nine questionnaire submissions. Session metadata and some interpretations remain open. | Confirm available metadata, conduct follow-up walkthroughs and link findings to requirement changes or reasons for no change. Existing notes are not five successful standardised tests. |
+| **3. Research and evaluation: High** | Section 9 separates assessment from forecasting and proposes conditional splits, metrics and leakage controls. No record-level audit or model result is reported. | After defining the outcome and data, freeze population, temporal split, baselines, primary metric and practical criteria. Run a reproducible audit of permitted records, availability times and label independence. |
+| **4. Implementation evidence: High** | The prototype remains synthetic and memory-only. React, FastAPI, PostgreSQL, authentication and persistence are proposed. | Build and demonstrate authenticated input, server validation, owned storage and history. Retain positive, ownership-denial and failure/retry test evidence for REQ-V02, V03, V04 and V12. |
+| **5. Privacy and responsible use: High** | FR-001/006 and NFR-001/002/006 define notice, ownership and lifecycle conditions. Exploratory interviews do not establish permission for a data pilot. | Before collection, document consent, minimisation, retention, deletion, access and institutional permissions. Keep non-diagnostic wording, no unsupported risk scores and no automatic staff disclosure. |
+| **6. Architecture and API: Medium** | Section 7 describes routes and boundaries; an executable OpenAPI contract is not delivered. | Validate a contract covering authentication, errors, idempotency and lifecycle. Check model availability before model-specific sufficiency; distinguish execution failures and return no score for unavailable/insufficient states. |
+| **7. UX validation: Medium** | Result wording was revised after recorded ambiguity, then browser-checked. Participant understanding was not retested; a 500-pixel check does not meet the 360-pixel target. | Observe missing versus zero, unavailable versus low risk, and pending versus completed. Record assistance, explanations and shown revision; verify corrections and NFR-004/REQ-V10. |
+| **8. GitHub, YouTrack and traceability: Medium** | The task register links owners and delivery evidence. Public-access checks and a YouTrack evidence PDF exist; substantive peer review remains open. | Retain meaningful reviewer comments and resolutions, issue-to-requirement/test/commit links and accessible final artifacts. Reconcile the response register, PDFs and submission tag, then recheck changed artifacts. |
 
-When feedback arrives, record its date and source, the affected requirements, the agreed response and the resulting revision.
+## Five deliverables for the next review
+
+The next review date is unspecified. These deliverables remain open; the present documents provide inputs.
+
+1. **Data and outcome feasibility decision:** measurement specification, permitted temporal data, justified horizon or fallback. Aruzhan coordinates, with Saniya for measurement. [ARP-16](https://academic-risk-platform.youtrack.cloud/issue/ARP-16).
+2. **Interview findings and revised requirements:** supported metadata, finding-to-change links and actual follow-up observations. Saniya coordinates, with Vitaliy for session evidence. [ARP-11](https://academic-risk-platform.youtrack.cloud/issue/ARP-11).
+3. **Working, tested application slice:** authenticated input, validation, owned persistence, history and an executable API contract. Vitaliy coordinates. [ARP-17](https://academic-risk-platform.youtrack.cloud/issue/ARP-17).
+4. **Reproducible research/verification record:** permitted-data audit, conditional protocol, configurations and actual expected/observed checks. Aruzhan coordinates research, Vitaliy software checks and Saniya UX. [ARP-18](https://academic-risk-platform.youtrack.cloud/issue/ARP-18).
+5. **GitHub/YouTrack evidence and comment responses:** accessible reviewed revision, actual owners/states, substantive review records and traceable changes. Aruzhan consolidates evidence supplied by all members. [ARP-13](https://academic-risk-platform.youtrack.cloud/issue/ARP-13), [ARP-15](https://academic-risk-platform.youtrack.cloud/issue/ARP-15).

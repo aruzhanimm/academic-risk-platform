@@ -5,7 +5,7 @@
 Astana IT University · Software Engineering · SE-2423  
 Supervisor: **Akbota Rakym**
 
-[Interactive prototype](https://aruzhanimm.github.io/academic-risk-platform/) · [Report PDF](reports/prob-period-1/SE-2423_Kartam_ProbPeriod1.pdf) · [Documentation](docs/README.md) · [User research](docs/02_user_interviews.md) · [Task board](https://academic-risk-platform.youtrack.cloud/agiles/204-1/218-1)
+[Interactive prototype](https://aruzhanimm.github.io/academic-risk-platform/) · [Report PDF](reports/prob-period-1/SE-2423_Kartam_ProbPeriod1.pdf) · [Documentation](docs/README.md) · [User research](docs/02_user_interviews.md) · [Task evidence PDF](reports/prob-period-1/SE-2423_Kartam_YouTrack.pdf)
 
 ## About the project
 
@@ -45,7 +45,7 @@ This is a small convenience sample. Survey and interview participation may overl
 
 The [technology comparison](docs/05_technology_comparison.md), [architecture](docs/07_architecture.md) and [ADRs](docs/adr/README.md) explain the alternatives and decisions. Diagram [JSON sources and SVG exports](diagrams/README.md) remain editable.
 
-Forecasting requires outcomes measured after prediction time, suitable repeated observations and validation separated by student and time. The [evaluation plan](docs/09_verification_evaluation.md) defines baselines, leakage checks and acceptance gates. Measurement, permitted data access, substantive team review and [supervisor feedback](docs/11_supervisor_feedback.md) remain open. Moodle integration and adviser access are later extensions with separate access requirements.
+Forecasting requires outcomes measured after prediction time, suitable repeated observations and validation separated by student and time. The [evaluation plan](docs/09_verification_evaluation.md) defines baselines, leakage checks and acceptance gates. Measurement, permitted data access, substantive team review and the required actions from [received supervisor feedback](docs/11_supervisor_feedback.md) remain open. Moodle integration and adviser access are later extensions with separate access requirements.
 
 ## Team
 
@@ -57,7 +57,7 @@ All three members study in **SE-2423**.
 | [Vitaliy Golubenko](https://github.com/checkybox) | Architecture, backend, database, APIs, model integration and technical testing. |
 | [Saniya Yerzhan](https://github.com/ynsvrs) | Measurement, feature design, error analysis, user research, interface design and visualisation. |
 
-The [task register](docs/10_project_management/task_register.md) links delivered work to issues and pull requests. [Milestones](docs/10_project_management/milestones.md), [risks](docs/10_project_management/risks.md) and the [YouTrack project](https://academic-risk-platform.youtrack.cloud/projects/ARP) track the remaining work.
+The [task register](docs/10_project_management/task_register.md) links delivered work to issues and pull requests. [Milestones](docs/10_project_management/milestones.md), [risks](docs/10_project_management/risks.md) and the [YouTrack project](https://academic-risk-platform.youtrack.cloud/projects/ARP) track the remaining work. The live YouTrack workspace requires an authorised account; the linked task-evidence PDF provides a self-contained review copy.
 
 ## Run and edit locally
 

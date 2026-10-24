@@ -1,6 +1,6 @@
 # Machine Learning, Temporal Validation, Leakage, and Explainability
 
-**Working draft for team review.** Original search and source checks: **21 October 2026, Asia/Almaty**. This review covers five peer-reviewed publications: one study of current academic burnout, one educational dataset description, and three methodological papers. It is a targeted contribution to the [literature review](../../docs/03_literature_review.md), not a systematic review or a report of project experiments.
+**Working draft for team review.** Original search and source checks: **21 October 2026, Astana time**. This review covers five peer-reviewed publications: one study of current academic burnout, one educational dataset description, and three methodological papers. It is a targeted contribution to the [literature review](../../docs/03_literature_review.md), not a systematic review or a report of project experiments.
 
 The reading record below identifies the sections actually examined. It does not imply that supplementary materials or every cited paper were read. OULAD and the original SHAP paper are retained as primary sources for a dataset and a method; they do not replace recent literature on student burnout.
 

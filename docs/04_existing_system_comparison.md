@@ -1,6 +1,6 @@
 # 04. Existing System Comparison
 
-Official sources checked: **23 October 2026, Asia/Almaty**. Design implications are proposals for the initial prototype.
+Official sources checked: **23 October 2026, Astana time**. Design implications are proposals for the initial prototype.
 
 ## Purpose and comparison method
 
