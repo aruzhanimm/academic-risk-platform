@@ -118,7 +118,7 @@ The [feature register](../feature_operationalization.md) and [dataset audit](../
 
 ## Full-Text Access and Verification Record
 
-The original source review on **21 October 2026** examined the sections listed above. It checked published text and selected PDF pages, not the authors' computations. This handoff contains links and analysis only; it includes no article PDFs and makes no claim that local PDF files or hashes are part of the published repository.
+The original source review on **21 October 2026** examined the sections listed above. It checked published text and selected PDF pages, not the authors' computations. The repository records source links, reading locations and the resulting design implications.
 
 | ID | Full-text access route | Access and reuse qualification |
 | --- | --- | --- |
