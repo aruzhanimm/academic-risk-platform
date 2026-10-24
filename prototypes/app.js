@@ -95,13 +95,13 @@
     });
     const insufficient = state === 'insufficient';
     $('result-state-tag').textContent = insufficient ? 'Insufficient data · Example' : 'Model unavailable';
-    $('result-state-title').textContent = insufficient ? 'More information would be needed.' : 'An estimate is not available yet.';
+    $('result-state-title').textContent = insufficient ? 'More information would be needed.' : 'No prediction model is connected.';
     $('result-state-description').textContent = insufficient
       ? 'This is a preview of a future state: an enabled model has found that its required information is incomplete or unusable. A real service would explain the specific missing inputs.'
-      : 'A suitable evaluated model has not been enabled. You can still record observations and explore your history.';
+      : 'This prototype has no evaluated prediction model. Adding more observations will not enable a prediction. You can still explore your history.';
     $('result-state-note').textContent = insufficient
       ? 'Preview only. No model is running and this state has not been inferred from your example observation. No score is produced.'
-      : 'No numerical score or feature contribution has been generated.';
+      : 'An unavailable estimate does not mean low risk or zero risk. No score or feature contribution has been generated.';
   }
 
   // Navigation and focus
