@@ -1,9 +1,11 @@
 # Research
 
-Research materials for the Academic Risk Platform diploma project. The initial package is a working draft for team review; model training and collection of student data have not been performed.
+Research materials for the Academic Risk Platform diploma project. The literature and dataset work supports the proposed design. User research now includes nine questionnaire submissions and five anonymised interview records; the synthesis states the sampling and record limitations. No model has been trained and no longitudinal burnout dataset has been collected for this project.
 
 | Document | Purpose |
 | --- | --- |
+| [User interviews and relevance](../docs/02_user_interviews.md) | Questionnaire findings, interview synthesis, prototype interpretation issues and implications for requirements |
+| [User research evidence](../docs/evidence/README.md) | Aggregate counts, paraphrased interview records and instrument descriptions without raw personal data |
 | [Critical literature review](../docs/03_literature_review.md) | Comparison and synthesis of ten scientific publications and three official technical sources |
 | [Bibliography](bibliography.md) | Complete references, source links, and locations supporting the analysis |
 | [Research protocol](RESEARCH_PROTOCOL.md) | Questions, selection criteria, reading procedure, and evidence rules |
