@@ -1,6 +1,6 @@
 # 08. Interactive UX Prototype
 
-**Content: Draft. Team review: Pending. Prepared: 23 October 2026, Asia/Almaty.**
+The prototype specification covers the current interaction design and the user-research findings incorporated for the first submission.
 
 The [interactive prototype](../prototypes/index.html) explores four student workflows: input, personal history, result availability, and data-control requests. All screens and seeded observations are synthetic. HTML, CSS, and JavaScript run locally without external dependencies, network requests, authentication, a backend, or a model. Changes exist only in browser memory; reloading restores the initial examples. The [prototype README](../prototypes/README.md) explains local use and editable sources.
 
@@ -59,7 +59,13 @@ These IDs preserve project traceability; prototype coverage does not establish r
 
 NFR-004 concerns accessibility and understanding: labels, keyboard order, visible focus, textual states, and narrow-screen layout need inspection and actual walkthroughs. NFR-001 ownership, NFR-002 the personal-data lifecycle, NFR-003 temporal reproducibility, NFR-005 server performance, and NFR-006 deployment security/failure handling remain implementation requirements. Local responsiveness and a screenshot cannot establish them.
 
-## Planned walkthrough and evidence record
+## User feedback and further walkthrough checks
+
+The [user research synthesis](02_user_interviews.md) combines nine questionnaire submissions with five anonymised interview records. The notes report finding recent observations and data controls, but also show uncertainty about missing estimates. Two records initially associate an absent estimate with no risk; several explanations refer to insufficient data without identifying which result state was displayed. Exact session dates and the prototype revision shown remain unconfirmed.
+
+These observations support testing the distinction between `model_unavailable`, `insufficient_data` and low risk. They do not establish five successful comprehension tasks. The history chart represents sample study hours, not an overload score. Participants reportedly distinguished pending deletion from completion, but the notes do not establish whether everyone understood that a prototype request is only a preview. The [detailed synthesis](evidence/interview_synthesis.md) links these issues to FR-003, FR-005, FR-006 and NFR-004.
+
+The following tasks remain the procedure for a more controlled follow-up.
 
 Use synthetic examples and let participants decline or stop. Ask participants to perform tasks before explaining controls; record what happened separately from interpretations.
 
@@ -70,7 +76,7 @@ Use synthetic examples and let participants decline or stop. Ask participants to
 5. Preview a deletion request and explain whether deletion has occurred.
 6. Navigate by keyboard and inspect a narrow viewport; identify any action or text that becomes difficult to use.
 
-No participant feedback or task-success results are reported here. Use this empty record for actual observations; keep identifying information out of the repository.
+The record below is for further sessions. Existing feedback is reported separately above; no standardised completion rate or accessibility result is claimed. Keep identifying information out of the repository.
 
 | Evidence field | Value to record after the session |
 | --- | --- |
@@ -82,3 +88,7 @@ No participant feedback or task-success results are reported here. Use this empt
 | Follow-up decision, actual reviewer, and verification evidence | — |
 
 Reconcile the prototype and requirement/architecture drafts before implementation; record actual evidence for later changes.
+
+## Result wording revision
+
+The result screen now explicitly states that no prediction model is connected, that adding observations will not enable a prediction, and that an unavailable result is not a low or zero risk result. This change follows the interpretation issues in the interview notes. [Browser verification](evidence/prototype_checks.md) checks the revised demonstration; a participant retest is still needed.
