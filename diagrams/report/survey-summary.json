@@ -1,0 +1,27 @@
+{
+  "observed_responses": 9,
+  "unique_persons_verified": false,
+  "tools_multiselect": {
+    "Moodle or learning system": 6,
+    "Calendar": 0,
+    "Task list": 3,
+    "Notes or notebook": 1,
+    "Memory": 4,
+    "Do not track": 0,
+    "iPhone reminders (other)": 1
+  },
+  "difficulty_frequency": {
+    "Never": 2,
+    "Rarely": 1,
+    "Sometimes": 2,
+    "Often": 4,
+    "Almost always": 0,
+    "No assignments": 0,
+    "Unsure": 0
+  },
+  "entry_frequency": {
+    "Daily": 3,
+    "Several times weekly": 3,
+    "Weekly": 3
+  }
+}
