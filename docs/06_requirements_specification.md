@@ -2,7 +2,7 @@
 
 **Content status:** Draft. **Team review:** Pending. Prepared on **23 October 2026**.
 
-These requirements describe the proposed student-facing prototype. They are derived from the [project overview](../README.md), [literature review](03_literature_review.md), [system comparison](04_existing_system_comparison.md), and [technology decisions](05_technology_comparison.md). They are not findings from completed student interviews or supervisor approval. Priorities describe implementation scope, not work already delivered for the first pre-defense.
+These requirements describe the proposed student-facing prototype. Their design basis is the [project overview](../README.md), [literature review](03_literature_review.md), [system comparison](04_existing_system_comparison.md) and [technology decisions](05_technology_comparison.md). The [user-needs study](02_user_interviews.md) now maps five interview records and nine questionnaire submissions to these requirements and identifies follow-up checks. This small convenience sample supports refinement; it does not establish formal user acceptance or supervisor approval. Priorities describe implementation scope, not work already delivered for the first pre-defense.
 
 ## Scope, actors, and priorities
 

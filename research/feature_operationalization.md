@@ -65,7 +65,7 @@ Minimum checks before a row enters an experiment:
 | Name, email, or identifier as a model feature | Exclude | Enables memorisation; identity is unnecessary for the predictor. |
 | Gender, ethnicity, or medical diagnoses | Exclude from the MVP | Necessity has not been established; any subgroup audit needs separate agreement and sufficient data. |
 | Correspondence, psychiatric information, or unnecessary family details | Do not collect | Outside the minimal project scope. |
-| AI-generated questionnaires presented as a real dataset | Exclude from performance evidence | Synthetic records may support interface or schema checks only. |
+| Simulated questionnaire responses presented as observations | Exclude from performance evidence | Synthetic records may support interface or schema checks only. |
 | Sleep, wearables, or LMS inputs | Defer | Access, protocol, and necessity have not been confirmed for this MVP. |
 
 ## Proposed study of feature groups and errors
