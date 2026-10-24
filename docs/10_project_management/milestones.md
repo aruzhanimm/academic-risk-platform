@@ -1,16 +1,17 @@
 # Milestones and dependencies
 
-**Planning snapshot: 23 October 2026, Asia/Almaty. Content: Draft. Team review: Pending.**
+**Snapshot: 24 October 2026, Asia/Almaty. Targets and completion evidence are recorded separately.**
 
-The submission deadline is **24 October 2026**. The immediate next check is to obtain the live form URL and confirm its closing time and time zone; these are absent from the supplied screenshots.
+The confirmed submission deadline is **24 October 2026 at 18:00, Asia/Almaty**. Final form access, correct uploads and successful submission still require confirmation.
 
 ## Starting point
 
-- Documents 03–08 are on `main`; peer review remains pending under [ARP-13].
-- The evaluation plan is in open PR #6 under [ARP-8]. Proposal and management drafts are in the working branch under [ARP-9] and [ARP-10]; all three tasks are In Progress.
+- PRs #1–#7 are merged in publication baseline af97bec, including the evaluation plan, proposal and management documents. Substantive peer review remains pending under [ARP-13].
 - The interactive prototype uses synthetic examples and browser memory only. It has no backend, authentication, persistent storage or forecasting model; export/deletion interactions are previews.
-- Student discussions, participant observations and supervisor feedback have not yet been received. Actual evidence capture is targeted for 24 October.
-- Fourteen YouTrack issues, ARP-2–ARP-15, exist: six Done, three In Progress and five To do. The [task register](task_register.md) records their fields and delivery links. Done publication tasks cover deliverable availability; evidence and review have separate tasks.
+- The [user-needs study](../02_user_interviews.md) synthesises five interview records and nine questionnaire submissions, with unresolved session metadata and interpretation limits. [Supervisor feedback](../11_supervisor_feedback.md) has not been recorded.
+- Fourteen YouTrack issues, ARP-2–ARP-15, are recorded as nine Done, four In Progress and one To do. The [task register](task_register.md) identifies the remaining conditions.
+- The final submission branch [docs/probation-period-one](https://github.com/aruzhanimm/academic-risk-platform/tree/docs/probation-period-one), checked at [2c23187](https://github.com/aruzhanimm/academic-risk-platform/commit/2c23187), contains the 35-page report PDF, editable Word document and prototype files. It has not been merged into main.
+- The repository is public. Hosting, the YouTrack PDF, the final tag and form submission are still in progress or pending.
 
 This submission consolidates research, design, prototype, management and evidence. It does not depend on completing a production application or training a model.
 
@@ -34,19 +35,19 @@ The following due-date fields match the live-task snapshot. Dates through 20 Oct
 
 | Milestone | Target | Dependencies | Coordinating owner | Completion evidence | Position at snapshot |
 | --- | --- | --- | --- | --- | --- |
-| Confirm the submission route and closing time · [ARP-15] | Immediate check: 23 October | Live form or authoritative instructions | Aruzhan Kartam | Recorded form URL, closing date/time/time zone, deadline source and successful access check. | Unconfirmed; ARP-15 To do. |
-| Consolidate documentation · [ARP-8], [ARP-9], [ARP-10], [ARP-13] | 23 October | Published documents; evaluation PR #6; proposal and management drafts | Aruzhan Kartam: integration; Vitaliy Golubenko: cross-review coordination | Review comments resolved; materials integrated; all original report requirements covered or gaps identified. Another member reviews Vitaliy's contributions. | ARP-8–ARP-10 In Progress; ARP-13 To do. |
-| Reconcile task tracking and delivery evidence · [ARP-10] | 23 October | Fourteen live issues and published deliverables | Aruzhan Kartam; all members check their entries | Issue fields, acceptance criteria and commit/PR links agree with the register and actual outcomes. | Issues and register exist; management publication In Progress. |
-| Record user evidence and supervisor feedback · [ARP-11], [ARP-12] | 24 October, before the freeze | Reviewable materials; participant and supervisor availability | Saniya Yerzhan: user evidence; Aruzhan Kartam: supervisor feedback | Required relevance evidence, dated anonymised observations, feedback, decisions and revision links. | Both tasks To do. |
-| Verify access · [ARP-14] | 23 October; recheck before submission | Repository access; accessible prototype; diagrams and sources | Vitaliy Golubenko | Dated checks of repository, prototype and diagram/source URLs under intended committee access conditions. | To do. |
-| Capture task and review evidence · [ARP-15] | 24 October | Reconciled tasks, deliverables and actual reviews | Aruzhan Kartam; each member checks their contribution record | Readable board/issue captures with assignees, priorities, deadlines and statuses; a completed example includes expected outcome, acceptance criteria and commit/PR link. | To do. |
-| Freeze the source revision · [ARP-15] | 24 October, before PDF generation | Consolidation; feedback/review decisions; access and task evidence | Aruzhan Kartam; all members confirm their information | One source commit recorded; all 11 report sections checked; links, statuses and remaining gaps reconciled. | To do. |
-| Build and check both PDFs · [ARP-15] | 24 October | Frozen source, evidence captures and verified team details | Aruzhan Kartam | One board/task PDF, at most 10 MB; one main report, at most 100 MB, with all 11 sections in order, contents and accessible supporting links. Filename: `Group_RepresentativeSurname_ProbPeriod1.pdf`. Both open correctly and match the source revision. | To do. |
-| Tag and submit · [ARP-15] | 24 October, before confirmed closing time | Checked PDFs, form details, access and team confirmation | Aruzhan Kartam as proposed representative | `prob-period-1` resolves to the frozen commit. The form contains the direct tag/repository URLs, accurate member details and contribution links; both PDFs are uploaded and confirmation retained. | To do. |
+| Confirm the submission route and uploads · [ARP-15] | Before 24 October, 18:00 Asia/Almaty | Live form and confirmed deadline | Aruzhan Kartam | Correct form access, two required PDFs and retained submission confirmation. | Deadline confirmed; form submission pending. |
+| Consolidate documentation · [ARP-8], [ARP-9], [ARP-10], [ARP-13] | 23 October | Published baseline; final user-evidence and submission additions | Aruzhan Kartam: integration; Vitaliy Golubenko: cross-review coordination | Review comments resolved; materials integrated; all original report requirements covered or gaps identified. Another member reviews Vitaliy's contributions. | Main baseline published; final additions on the submission branch. Eight prototype checks recorded; substantive team confirmation and final reconciliation remain outstanding. |
+| Reconcile task tracking and delivery evidence · [ARP-10] | 23 October | Fourteen live issues and published deliverables | Aruzhan Kartam; all members check their entries | Issue fields, acceptance criteria and commit/PR links agree with the register and actual outcomes. | Current snapshot reconciled to nine Done, four In Progress and one To do; capture the live board and task evidence. |
+| Record user evidence and supervisor feedback · [ARP-11], [ARP-12] | 24 October, before the freeze | Reviewable materials; participant and supervisor availability | Saniya Yerzhan: user evidence; Aruzhan Kartam: supervisor feedback | Required relevance evidence, dated anonymised observations, feedback, decisions and revision links. | ARP-11 In Progress: evidence synthesised, metadata and interpretation checks remain. ARP-12 To do: supervisor feedback outstanding. |
+| Verify access · [ARP-14] | Before submission | Public repository; hosted prototype; diagrams and sources | Vitaliy Golubenko | Dated checks of repository, prototype and diagram/source URLs under intended committee access conditions. | In Progress: repository public; hosting and hosted-prototype access verification pending. |
+| Capture task and review evidence · [ARP-15] | 24 October | Reconciled tasks, deliverables and actual reviews | Aruzhan Kartam; each member checks their contribution record | Readable board/issue captures with assignees, priorities, deadlines and statuses; a completed example includes expected outcome, acceptance criteria and commit/PR link. | YouTrack evidence PDF pending; human review evidence remains outstanding. |
+| Freeze the source revision · [ARP-15] | 24 October, before PDF generation | Consolidation; feedback/review decisions; access and task evidence | Aruzhan Kartam; all members confirm their information | One source commit recorded; all 11 report sections checked; links, statuses and remaining gaps reconciled. | Completion evidence pending. |
+| Build and check both PDFs · [ARP-15] | 24 October | Frozen source, evidence captures and verified team details | Aruzhan Kartam | One board/task PDF, at most 10 MB; one main report, at most 100 MB, with all 11 sections in order, contents and accessible supporting links. Main filename: `SE-2423_Kartam_ProbPeriod1.pdf`. Both open correctly and match the source revision. | Report PDF and Word document prepared; YouTrack PDF and final revision matching pending. |
+| Tag and submit · [ARP-15] | 24 October, before 18:00 Asia/Almaty | Checked PDFs, form details, access and team confirmation | Aruzhan Kartam, team representative | `prob-period-1` resolves to the frozen commit. The form contains the direct tag/repository URLs, accurate member details and contribution links; both PDFs are uploaded and confirmation retained. | Completion evidence pending. |
 
 ## Dependency sequence
 
-Review, tracking and access work can proceed in parallel. Evidence assembly depends on their reconciled state. Confirming the submission route and closing time is an immediate prerequisite for scheduling the final upload.
+Review, tracking and access work can proceed in parallel. Evidence assembly depends on their reconciled state. The final upload must finish before the confirmed 18:00 deadline on 24 October; preparing PDFs is separate from submitting the form.
 
 ```text
 Documentation consolidation ───────────────┐
